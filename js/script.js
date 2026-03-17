@@ -71,8 +71,12 @@ const fiskData = {
     navn: 'Europæisk ål',
     latin: 'Anguilla anguilla',
     tekst: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+   royalGramma: {
+    navn: 'Royal Gramma',
+    latin: 'Haemulon cyanum',
+    tekst: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   }
-
 };
 
 const popup = document.getElementById('fiske-popup');
@@ -122,9 +126,15 @@ document.getElementById('fiske-gruppe').addEventListener('click', (e) => {
   åbnPopup('fiskeGruppe');
 });
 
+// Klik på royal gramma åbner popup
+document.getElementById('fisk-royal-gramma').addEventListener('click', (e) => {
+  e.stopPropagation();
+  åbnPopup('royalGramma');
+});
+
 // Klik udenfor boblen lukker den
 document.body.addEventListener('click', (e) => {
   if (!e.target.closest('#fiske-popup')) {
     lukPopup();
   }
-});
+}); 
