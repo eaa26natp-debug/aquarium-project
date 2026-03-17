@@ -12,9 +12,6 @@ console.log(bubble);
 
 
 
-
-
-
 // Pop boblen på klik
 bubble.addEventListener("click", () => {
     sound.currentTime = 0;
@@ -30,6 +27,60 @@ bubble.addEventListener("click", () => {
         bubble.style.opacity = "1";
     }, 300);
 });
+
+// Små bobler
+function spawnBubble() {
+    const bubble = document.createElement("img");
+    bubble.src = "imag/bubble.png";
+    bubble.classList.add("bubble");
+
+    // start position (random vandret)
+    bubble.style.left = Math.random() * window.innerWidth + "px";
+    bubble.style.bottom = "0px";
+
+    document.body.appendChild(bubble);
+
+    // klik → pop
+    bubble.addEventListener("click", () => {
+        bubble.style.opacity = "0";
+        setTimeout(() => bubble.remove(), 200);
+    });
+};
+
+
+
+function spawnBubble() {
+    const bubble = document.createElement("img");
+    bubble.src = "imges/bubble.png";
+    bubble.classList.add("bubble");
+
+    let x = Math.random() * window.innerWidth;
+    let y = 0;
+
+    bubble.style.left = x + "px";
+    bubble.style.bottom = "0px";
+
+    document.body.appendChild(bubble);
+
+    const interval = setInterval(() => {
+        y += 2;
+        bubble.style.bottom = y + "px";
+
+        if (y > window.innerHeight) {
+            bubble.remove();
+            clearInterval(interval);
+        }
+    }, 20);
+
+    bubble.addEventListener("click", () => {
+        bubble.style.opacity = "0";
+        setTimeout(() => {
+            bubble.remove();
+            clearInterval(interval);
+        }, 200);
+    });
+};
+setInterval(spawnBubble, 1000); // ny boble hver 1 sekund
 
 // let createbubble = document.createElement("img");
 // createbubble.classList.add("bubble")

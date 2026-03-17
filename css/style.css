@@ -246,8 +246,16 @@ body {
   right: 50px;
   width: 100px;
   cursor: pointer;
-  
 }
+
+.bubble {
+    position: absolute;
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+    opacity: 0.6;
+}
+
 
 /* Food section */
 #food-popup {
