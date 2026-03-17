@@ -177,6 +177,39 @@ body {
 
 
 
+/* Fisk 5 Animation og placering */
+.fish5 {
+  position: absolute;
+  width: 25vw;
+  bottom: 1vh;
+  left: 5vw;
+  animation: fish5 60s ease infinite;
+}
+
+@keyframes fish5 {
+  0% {
+    transform: translateX(0) rotateY(180deg);
+  }
+
+  49% {
+    transform: translateX(70vw) rotateY(180deg);
+  }
+
+  50% {
+    transform: translateX(70vw) rotateY(0deg);
+  }
+
+  99% {
+    transform: translateX(0) rotateY(0deg);
+  }
+
+  100% {
+    transform: translateX(0) rotateY(180deg);
+  }
+}
+
+
+
 #bubble1 {
   transition: opacity 0.3s;
   position: absolute;
