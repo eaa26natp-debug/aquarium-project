@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /* Fisk 1 Animation og placering */
 .fish1 {
     position: absolute;
@@ -18,6 +19,22 @@
     0% {transform: translateX(0);}
     100% {transform: translateX(calc(100vw + 20vw));}
 }
+
+
+
+/* Fish Group placering og størrelse */
+.fishGroup {
+    position: absolute;
+    bottom: 30vh;
+    width: 40vw;
+    height: 20vw;
+}
+
+.fish2 {
+    position: absolute;
+    width: 8vw;
+}
+
 
 
 #bubble1 {
