@@ -19,7 +19,6 @@ body {
   position: absolute;
   width: 15vw;
   bottom: 50vh;
-  z-index: 1;
   left: calc(-15vw);
   animation: fish1 20s ease-in-out infinite;
 }
@@ -38,9 +37,9 @@ body {
 /* Fish Group placering og størrelse */
 .fishGroup {
     position: absolute;
-    bottom: 30vh;
-    width: 40vw;
-    height: 20vw;
+    bottom: 18vh;
+    width: 21vw;
+    height: 15vw;
 }
 
 .fish2 {
