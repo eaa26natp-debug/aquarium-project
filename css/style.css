@@ -98,6 +98,7 @@ body {
 
 #bubble1 {
   transition: opacity 0.3s;
+  
 }
 
 /* Food section */
@@ -112,4 +113,17 @@ body {
 #food-popup .foods {
   display: flex;
   gap: 34px;
+}
+
+.bubble {
+ animation: floatUp 5s linear infinite;
+}
+
+@keyframes floatUp {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 100vh;
+}
 }
