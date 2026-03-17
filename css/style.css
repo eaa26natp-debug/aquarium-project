@@ -42,7 +42,38 @@ body {
 
 .fish2 {
     position: absolute;
-    width: 8vw;
+    width: 6vw;
+}
+
+/* Placering af hver enkel fisk i fish Group */
+ #fishA {
+    left: 3vw;
+    top: 0;
+}
+
+#fishB {
+    left: 10vw;
+    top: 0;
+}
+
+#fishC {
+    left: 0vw;
+    top: 5vw;
+}
+
+#fishD {
+    left: 7vw;
+    top: 5vw;
+}
+
+#fishE {
+    left: 14vw;
+    top: 5vw;
+}
+
+#fishF {
+    left: 8vw;
+    top: 10vw;
 }
 
 
