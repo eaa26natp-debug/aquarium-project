@@ -35,6 +35,7 @@ body {
   transition: opacity 0.3s;
 }
 
+/* Food section */
 #food-popup {
   padding: 32px 0;
   display: flex;
