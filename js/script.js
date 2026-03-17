@@ -44,13 +44,25 @@ createbubble.classList.add("bubble")
 //     }, 200);
 // });
 
+
+/* Fiskedata og popup-funktionalitet */
 const fiskData = {
   lyrehale: {
     navn: 'Lyrehale Anthias',
     latin: 'Pseudanthias squamipinnis',
     tekst: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
-  // tilføj flere fisk her...
+   gulKirugfisk: {
+    navn: 'Gul kirurgfisk',
+    latin: 'Chelmon rostratus',
+    tekst: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+   kirugfisk: {
+    navn: 'Kirurgfisk',
+    latin: 'Acanthurus nigricans',
+    tekst: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  }
+
 };
 
 const popup = document.getElementById('fiske-popup');
