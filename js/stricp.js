@@ -16,7 +16,16 @@ bubble.addEventListener("click", () => {
          bubble.style.transform = "scale(1)";
         bubble.style.opacity = "1";
     }, 300);
-})
+});
+
+let createbubble = document.createElement("img");
+createbubble.classList.add("bubble")
+    createbubble.src = "imges/bubble.png"
+    document.body.appendChild(createbubble);
+    setTimeout(() => {
+    bubble.style.bottom = "0px";
+    bubble.style.opacity = "1";
+}, 300);
 
 // bubble.addEventListener("clik", () => {
 //     bubble.style.transform = "scale(1.3)";
