@@ -63,7 +63,7 @@ function spawnBubble() {
     document.body.appendChild(bubble);
 
     const interval = setInterval(() => {
-        y += 2;
+        y += 1;
         bubble.style.bottom = y + "px";
 
         if (y > window.innerHeight) {
