@@ -27,3 +27,9 @@ bubble.addEventListener("click", () => {
 //         bubble.remove();
 //     }, 200);
 // });
+
+document.addEventListener('click', function startSound() {
+  const audio = document.getElementById('bg-sound');
+  audio.play();
+  document.removeEventListener('click', startSound);
+});
