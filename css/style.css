@@ -11,5 +11,36 @@ body {
     background-position: center bottom;
     background-repeat: no-repeat;
     margin: 0;
-    min-height: 100vh;
+    min-height: 100vh;} 
+/* Fisk 1 Animation og placering */
+.fish1 {
+    position: absolute;
+    width: 15vw;
+    bottom: 50vh;
+    z-index: 1;
+    left: calc(-15vw);
+    animation: fish1 20s ease-in-out infinite;
+}
+
+@keyframes fish1 {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(calc(100vw + 20vw));}
+}
+
+
+#bubble1 {
+  transition: opacity 0.3s;
+}
+
+#food-popup {
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+}
+
+#food-popup .foods {
+  display: flex;
+  gap: 34px;
 }
