@@ -116,6 +116,39 @@ body {
 
 
 
+/* Fisk 4 Animation og placering */
+.fish4 {
+  position: absolute;
+  width: 15vw;
+  bottom: 70vh;
+  right: -15vw;
+  animation: fish4 16s ease-in-out infinite;
+}
+
+@keyframes fish4 {
+  0% {
+    transform: translateX(0) rotateY(180deg);
+  }
+
+  49% {
+    transform: translateX(-115vw) rotateY(180deg);
+  }
+
+  50% {
+    transform: translateX(-115vw) rotateY(0deg);
+  }
+
+  99% {
+    transform: translateX(0) rotateY(0deg);
+  }
+
+  100% {
+    transform: translateX(0) rotateY(180deg);
+  }
+}
+
+
+
 #bubble1 {
   transition: opacity 0.3s;
   position: absolute;
