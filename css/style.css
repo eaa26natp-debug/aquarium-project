@@ -142,8 +142,6 @@ body {
   }
 }
 
-
-
 /* Fisk 4 Animation og placering */
 .fish4 {
   position: absolute;
@@ -240,12 +238,12 @@ body {
   }
 }
 
-
+/* Bubble */
 #bubble1 {
   transition: opacity 0.3s;
   position: absolute;
   bottom: 0;
-  left: 50%;
+  right: 50px;
   width: 100px;
   cursor: pointer;
   
@@ -265,7 +263,7 @@ body {
   gap: 34px;
 }
 
-.bubble {
+/* .bubble {
  animation: floatUp 5s linear infinite;
 }
 
@@ -276,4 +274,4 @@ body {
   to {
     bottom: 100vh;
 }
-}
+} */
