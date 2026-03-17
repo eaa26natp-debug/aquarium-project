@@ -44,3 +44,41 @@ createbubble.classList.add("bubble")
 //     }, 200);
 // });
 
+const fiskData = {
+  lyrehale: {
+    navn: 'Lyrehale Anthias',
+    latin: 'Pseudanthias squamipinnis',
+    tekst: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  // tilføj flere fisk her...
+};
+
+const popup = document.getElementById('fiske-popup');
+
+function åbnPopup(fiskId) {
+  const fisk = fiskData[fiskId];
+  if (!fisk) return;
+
+  document.getElementById('popup-navn').textContent = fisk.navn;
+  document.getElementById('popup-latin').textContent = fisk.latin;
+  document.getElementById('popup-tekst').textContent = fisk.tekst;
+
+  popup.classList.add('popup-synlig');
+}
+
+function lukPopup() {
+  popup.classList.remove('popup-synlig');
+}
+
+// Klik på lyrehale åbner popup
+document.getElementById('fisk-lyrehale').addEventListener('click', (e) => {
+  e.stopPropagation();
+  åbnPopup('lyrehale');
+});
+
+// Klik udenfor boblen lukker den
+document.body.addEventListener('click', (e) => {
+  if (!e.target.closest('#fiske-popup')) {
+    lukPopup();
+  }
+});
