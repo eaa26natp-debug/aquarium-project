@@ -96,6 +96,26 @@ body {
 
 
 
+/* Fisk 3 Animation og placering */
+.fish3 {
+  position: absolute;
+  width: 13vw;
+  bottom: 65vh;
+  right: calc(-15vw);
+  animation: fish3 30s ease-out infinite;
+}
+
+@keyframes fish3 {
+  0% {
+    transform: translateX(0) rotateY(180deg);
+  }
+  90%, 100% {
+    transform: translateX(calc(-100vw - 15vw)) rotateY(180deg);
+  }
+}
+
+
+
 #bubble1 {
   transition: opacity 0.3s;
   
