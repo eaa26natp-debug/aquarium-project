@@ -63,9 +63,19 @@ const fiskData = {
     latin: 'Chelmon rostratus',
     tekst: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
-   kirugfisk: {
+   fiskeGruppe: {
     navn: 'Kirurgfisk',
     latin: 'Acanthurus nigricans',
+    tekst: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+   paletKirugfisk: {
+    navn: 'Paletkirurgfisk',
+    latin: 'Paracanthurus hepatus',
+    tekst: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+   eeal: {
+    navn: 'Europæisk ål',
+    latin: 'Anguilla anguilla',
     tekst: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   }
 
@@ -92,6 +102,30 @@ function lukPopup() {
 document.getElementById('fisk-lyrehale').addEventListener('click', (e) => {
   e.stopPropagation();
   åbnPopup('lyrehale');
+});
+
+// Klik på gul kirurgfisk åbner popup
+document.getElementById('fisk-gul-kirugfisk').addEventListener('click', (e) => {
+  e.stopPropagation();
+  åbnPopup('gulKirugfisk');
+});
+
+// Klik på paletkirugfisk åbner popup
+document.getElementById('fisk-paletkirugfisk').addEventListener('click', (e) => {
+  e.stopPropagation();
+  åbnPopup('paletKirugfisk');
+});         
+
+// Klik på eeal åbner popup
+document.getElementById('fisk-eeal').addEventListener('click', (e) => {
+  e.stopPropagation();
+  åbnPopup('eeal');
+});
+
+// klik på fiskegruppe åbner popup
+document.getElementById('fiske-gruppe').addEventListener('click', (e) => {
+  e.stopPropagation();
+  åbnPopup('fiskeGruppe');
 });
 
 // Klik udenfor boblen lukker den
