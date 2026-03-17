@@ -1,8 +1,35 @@
 * {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
+
+body {
+    background-image: url('../imges/akvarie-baggrund-landskab.png');
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    margin: 0;
+    min-height: 100vh;
+} 
+
+
+/* Fisk 1 Animation og placering */
+.fish1 {
+    position: absolute;
+    width: 15vw;
+    bottom: 50vh;
+    z-index: 1;
+    left: calc(-15vw);
+    animation: fish1 20s ease-in-out infinite;
+}
+
+@keyframes fish1 {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(calc(100vw + 20vw));}
+}
+
 
 #bubble1 {
   transition: opacity 0.3s;
