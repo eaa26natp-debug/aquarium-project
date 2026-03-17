@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Lyrehale Anthias",
+    "latinsk-name": "(Pseudanthias squamipinnis)",
+    "race": "Revfisk",
+
+    "habitat": "Lever ved koralrev i tropiske havområder",
+    "havitat-text": "Jeg bor ved koralrev i varme havområder, hvor der er masser af liv omkring mig. Jeg svømmer ofte sammen med andre fisk over revet, men holder mig tæt på gode gemmesteder. Så kan jeg hurtigt smutte væk, hvis jeg bliver bange.",
+
+    "food": [
+      { "Plankton": "planktons-icon.svg" },
+      { "Små dyr": "small-fish-icon.svg" },
+      { "Krebsdyr": "crap-icon.svg" }
+    ],
+    "food-text": "Jeg er en lille fisk, som godt kan lide at spise bitte små dyr, der svæver rundt i vandet. Jeg fanger min mad ude i vandet nær revet, hvor jeg bor. Nogle gange snupper jeg små krebsdyr og plankton, som driver forbi mig.",
+
+    "size": "Ca. 7–15 cm",
+    "special": "Kan skifte køn, hvis gruppens han forsvinder",
+
+    "read-more-1": "Den lever ofte i stimer med mange hunner og få hanner. Hvis hannen i gruppen forsvinder, kan den største hun ændre sig og blive til en han. Det gør arten helt særlig og viser, hvor fascinerende livet under havets overflade kan være. Lyretail anthias er vigtig for koralrevets økosystem, fordi den indgår i fødekæden og er med til at holde revet sundt og aktivt. Samtidig er den en af de fisk, mange lægger mærke til først, fordi den er så farverig og elegant at se på.",
+    "read-more-2": "Lyretail anthias er en lille og farverig revfisk, som ofte ses svømme i grupper over koralrevet. Den er kendt for sine varme orange og rosa farver samt sin flotte, kløftede hale.",
+    "read-more-3": "Fisken bruger en stor del af dagen på at fange plankton i det frie vand. En af de mest spændende ting ved lyretail anthias er dens sociale liv. "
+  },
+  {
+    "name": "Europæisk Ål",
+    "latinsk-name": "(Anguilla anguilla)",
+    "race": "Katadrom vandrefisk",
+
+    "habitat": "Lever i åer, søer, fjorde og kystområder",
+    "havitat-text": "Jeg lever i åer, søer, fjorde og ved kyster. Jeg kan godt lide steder med planter, mudder og gode gemmesteder, hvor jeg kan skjule mig og føle mig tryg.",
+
+    "food": [
+      { "Insektlarver": "worm-icon.svg" },
+      { "Små fisk": "small-fish-icon.svg" },
+      { "Krebsdyr": "crap-icon.svg" }
+    ],
+    "food-text": "Jeg spiser små fisk, larver, krebsdyr og andre smådyr, som jeg finder i vandet. Jeg leder ofte efter mad nede ved bunden, hvor der gemmer sig mange spændende ting at spise.",
+
+    "size": "Kan blive over 1 meter lang",
+    "special": "Vandrer helt til Sargassohavet for at gyde",
+
+    "read-more-1": "Europæisk ål, Anguilla anguilla, er en særlig fiskeart med en usædvanlig livscyklus. Den klækkes i Sargassohavet i Atlanterhavet, driver mod Europa som larve og vokser op i ferskvand eller kystområder. Når den bliver voksen, vandrer den tilbage til Sargassohavet for at gyde. Derfor kaldes den en vandrefisk. Europæisk ål er i dag kritisk truet. Bestanden er faldet meget på grund af blandt andet overfiskeri, spærringer i vandløb og tab af levesteder. Derfor arbejder mange på at beskytte den.",
+
+    "read-more-2": "Arten findes i mange forskellige levesteder, blandt andet åer, søer, fjorde, brakvand og kystområder. Den lever ofte nær bunden og søger gerne skjul mellem planter, sten, mudder og rødder. ",
+
+    "read-more-3": "Europæisk ål er et rovdyr, som spiser små fisk, insektlarver, krebsdyr og andre smådyr, alt efter hvor den lever, og hvor stor den er."
+  },
+  {
+    "name": "Royal gramma",
+    "latinsk-name": "(Gramma loreto)",
+    "race": "Revfisk",
+
+    "habitat": "Lever ved koralrev, klipper og huler i Caribien",
+    "havitat-text": "Jeg lever i åer, søer, fjorde og ved kyster. Jeg kan godt lide steder med planter, mudder og gode gemmesteder, hvor jeg kan skjule mig og føle mig tryg.",
+
+    "food": [
+      { "Insektlarver": "worm-icon.svg" },
+      { "Små fisk": "small-fish-icon.svg" },
+      { "Krebsdyr": "crap-icon.svg" }
+    ],
+    "food-text": "Jeg spiser små fisk, larver, krebsdyr og andre smådyr, som jeg finder i vandet. Jeg leder ofte efter mad nede ved bunden, hvor der gemmer sig mange spændende ting at spise.",
+
+    "size": "Kan blive over 1 meter lang",
+    "special": "Vandrer helt til Sargassohavet for at gyde",
+
+    "read-more-1": "Europæisk ål, Anguilla anguilla, er en særlig fiskeart med en usædvanlig livscyklus. Den klækkes i Sargassohavet i Atlanterhavet, driver mod Europa som larve og vokser op i ferskvand eller kystområder. Når den bliver voksen, vandrer den tilbage til Sargassohavet for at gyde. Derfor kaldes den en vandrefisk. Europæisk ål er i dag kritisk truet. Bestanden er faldet meget på grund af blandt andet overfiskeri, spærringer i vandløb og tab af levesteder. Derfor arbejder mange på at beskytte den.",
+
+    "read-more-2": "Arten findes i mange forskellige levesteder, blandt andet åer, søer, fjorde, brakvand og kystområder. Den lever ofte nær bunden og søger gerne skjul mellem planter, sten, mudder og rødder. ",
+
+    "read-more-3": "Europæisk ål er et rovdyr, som spiser små fisk, insektlarver, krebsdyr og andre smådyr, alt efter hvor den lever, og hvor stor den er."
+  }
+]
