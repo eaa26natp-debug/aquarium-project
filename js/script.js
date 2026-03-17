@@ -10,6 +10,12 @@ const bubble = document.getElementById("bubble1");
 const sound = new Audio("sound/bubble-pop.mp3");
 console.log(bubble);
 
+
+
+
+
+
+// Pop boblen på klik
 bubble.addEventListener("click", () => {
     sound.currentTime = 0;
     sound.play();
@@ -25,14 +31,14 @@ bubble.addEventListener("click", () => {
     }, 300);
 });
 
-let createbubble = document.createElement("img");
-createbubble.classList.add("bubble")
-    createbubble.src = "imges/bubble.png"
-    document.body.appendChild(createbubble);
-    setTimeout(() => {
-    bubble.style.bottom = "0px";
-    bubble.style.opacity = "1";
-}, 300);
+// let createbubble = document.createElement("img");
+// createbubble.classList.add("bubble")
+//     createbubble.src = "imges/bubble.png"
+//     document.body.appendChild(createbubble);
+//     setTimeout(() => {
+//     bubble.style.bottom = "0px";
+//     bubble.style.opacity = "1";
+// }, 300);
 
 // bubble.addEventListener("clik", () => {
 //     bubble.style.transform = "scale(1.3)";

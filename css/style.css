@@ -45,9 +45,9 @@ body {
 /* Fisk 1 Animation og placering */
 .fish1 {
   position: absolute;
-  width: 15vw;
-  bottom: 50vh;
-  left: calc(-15vw);
+  width: 12vw;
+  bottom: 55vh;
+  left: calc(-12vw);
   animation: fish1 20s ease-in-out infinite;
 }
 
@@ -56,7 +56,7 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(100vw + 20vw));
+    transform: translateX(calc(100vw + 12vw));
   }
 }
 
@@ -65,8 +65,8 @@ body {
 /* Fish Group placering og størrelse */
 .fishGroup {
     position: absolute;
-    bottom: 18vh;
-    width: 21vw;
+    bottom: 10vh;
+    width: 22vw;
     height: 15vw;
 }
 
@@ -127,8 +127,8 @@ body {
 /* Fisk 3 Animation og placering */
 .fish3 {
   position: absolute;
-  width: 13vw;
-  bottom: 65vh;
+  width: 15vw;
+  bottom: 38vh;
   right: calc(-15vw);
   animation: fish3 30s ease-out infinite;
 }
@@ -137,12 +137,10 @@ body {
   0% {
     transform: translateX(0) rotateY(180deg);
   }
-  90%, 100% {
+  100% {
     transform: translateX(calc(-100vw - 15vw)) rotateY(180deg);
   }
 }
-
-
 
 /* Fisk 4 Animation og placering */
 .fish4 {
@@ -240,12 +238,12 @@ body {
   }
 }
 
-
+/* Bubble */
 #bubble1 {
   transition: opacity 0.3s;
   position: absolute;
   bottom: 0;
-  left: 50%;
+  right: 50px;
   width: 100px;
   cursor: pointer;
   
@@ -265,7 +263,7 @@ body {
   gap: 34px;
 }
 
-.bubble {
+/* .bubble {
  animation: floatUp 5s linear infinite;
 }
 
@@ -276,4 +274,4 @@ body {
   to {
     bottom: 100vh;
 }
-}
+} */
