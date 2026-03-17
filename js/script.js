@@ -1,5 +1,5 @@
 "use strict";
-
+/* test */
 const audio = document.getElementById("bg-sound");
 audio.play();
 document.removeEventListener("click", startSound);
