@@ -79,6 +79,22 @@ body {
 }
 
 
+/* fishGroup animation */
+.fishGroup {
+    left: calc(-22vw);
+    animation: fish2 25s ease infinite;
+}
+
+@keyframes fish2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(100vw + 22vw));
+  }
+}
+
+
 
 #bubble1 {
   transition: opacity 0.3s;
