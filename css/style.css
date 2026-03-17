@@ -4,17 +4,19 @@
   box-sizing: border-box;
 }
 
+#bubble1 {
+  transition: opacity 0.3s;
+}
 
 #food-popup {
-    padding: 32px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 34px;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
 }
 
-#food-popup .foods{
-    display: flex;
-    gap: 34px;
+#food-popup .foods {
+  display: flex;
+  gap: 34px;
 }
-
