@@ -47,8 +47,6 @@ function spawnBubble() {
     });
 };
 
-
-
 function spawnBubble() {
     const bubble = document.createElement("img");
     bubble.src = "imges/bubble.png";
@@ -80,7 +78,7 @@ function spawnBubble() {
         }, 200);
     });
 };
-setInterval(spawnBubble, 1000); // ny boble hver 1 sekund
+setInterval(spawnBubble, 3000); // ny boble hver 1 sekund
 
 // let createbubble = document.createElement("img");
 // createbubble.classList.add("bubble")
