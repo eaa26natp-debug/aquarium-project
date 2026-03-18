@@ -304,11 +304,11 @@ body {
 /* Forstørrelse af koral, når man klikker */
 #bubleCoral.bigger {
   transform: scale(1.2);
-  animation: big 8s ease;
+  animation: bigBuble 8s ease;
   transform-origin: bottom center;
 }
 
-@keyframes big {
+@keyframes bigBuble {
   0% {
     transform: skew(0deg) scale(1.2);
   }
@@ -332,6 +332,31 @@ body {
   width: 10vw;
   bottom: 0vh;
   left: 35%;
+}
+
+/* Forstørrelse af grøn tang, når man klikker */
+#greenTang.biggerGreen {
+  transform: scale(1.2);
+  animation: bigGreen 8s ease;
+  transform-origin: bottom center;
+}
+
+@keyframes bigGreen {
+  0% {
+    transform: skew(0deg) scale(1.2);
+  }
+  25% {
+    transform: skew(-8deg) scale(1.2);
+  }
+  50% {
+    transform: skew(8deg) scale(1.2);
+  }
+  75% {
+    transform: skew(-8deg) scale(1.2);
+  }
+  100% {
+    transform: skew(0deg) scale(1.2);
+  }
 }
 
 /* Rød koral placering og størrelse */
