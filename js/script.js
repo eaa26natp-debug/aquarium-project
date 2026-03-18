@@ -142,3 +142,13 @@ bubleCoral.addEventListener("click", () => {
     bubleCoral.classList.remove("bigger");
   }, 8000);
 });
+
+//Forstørrelse af grøn tang vha klik
+const greenTang = document.getElementById("greenTang")
+
+greenTang.addEventListener("click", () => {
+  greenTang.classList.add("biggerGreen");
+  setTimeout (function() {
+    greenTang.classList.remove("biggerGreen");
+  }, 8000);
+});
