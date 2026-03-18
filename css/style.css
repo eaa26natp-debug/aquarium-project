@@ -340,6 +340,7 @@ body {
   width: 10vw;
   bottom: 0vh;
   left: 35%;
+  cursor: pointer;
 }
 
 /* Forstørrelse af grøn tang, når man klikker */
@@ -373,4 +374,30 @@ body {
   width: 8vw;
   bottom: 1vh;
   left: 14%;
+  cursor: pointer;
+}
+
+/* Forstørrelse af Rød koral, når man klikker */
+#redCoral.biggerRed {
+  transform: scale(1.2);
+  animation: bigRed 8s ease;
+  transform-origin: bottom center;
+}
+
+@keyframes bigRed {
+  0% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  25% {
+    transform: rotate(-8deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(8deg) scale(1.2);
+  }
+  75% {
+    transform: rotate(-8deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(0deg) scale(1.2);
+  }
 }
