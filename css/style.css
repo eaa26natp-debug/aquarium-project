@@ -14,7 +14,8 @@ body {
   min-height: 100vh;
 }
 
-#fiske-popup {
+/* Synlighed af popups med info */
+.fiske-popup {
   position: fixed; /* fixed så den altid er midt på skærmen */
   top: 50%;
   left: 50%;
@@ -24,7 +25,7 @@ body {
   pointer-events: none;
 }
 
-#fiske-popup.popup-synlig {
+.fiske-popup.popup-synlig {
   transform: translate(-50%, -50%) scale(1);
   pointer-events: all;
 }
@@ -60,57 +61,54 @@ body {
   }
 }
 
-
-
 /* Fish Group placering og størrelse. */
 .fishGroup {
-    position: absolute;
-    bottom: 10vh;
-    width: 22vw;
-    height: 15vw;
+  position: absolute;
+  bottom: 10vh;
+  width: 22vw;
+  height: 15vw;
 }
 
 .fish2 {
-    position: absolute;
-    width: 6vw;
+  position: absolute;
+  width: 6vw;
 }
 
 /* Placering af hver enkel fisk i fish Group */
- #fishA {
-    left: 3vw;
-    top: 0;
+#fishA {
+  left: 3vw;
+  top: 0;
 }
 
 #fishB {
-    left: 10vw;
-    top: 0;
+  left: 10vw;
+  top: 0;
 }
 
 #fishC {
-    left: 0vw;
-    top: 5vw;
+  left: 0vw;
+  top: 5vw;
 }
 
 #fishD {
-    left: 7vw;
-    top: 5vw;
+  left: 7vw;
+  top: 5vw;
 }
 
 #fishE {
-    left: 14vw;
-    top: 5vw;
+  left: 14vw;
+  top: 5vw;
 }
 
 #fishF {
-    left: 8vw;
-    top: 10vw;
+  left: 8vw;
+  top: 10vw;
 }
-
 
 /* fishGroup animation */
 .fishGroup {
-    left: calc(-22vw);
-    animation: fish2 25s ease infinite;
+  left: calc(-22vw);
+  animation: fish2 25s ease infinite;
 }
 
 @keyframes fish2 {
@@ -121,8 +119,6 @@ body {
     transform: translateX(calc(100vw + 22vw));
   }
 }
-
-
 
 /* Fisk 3 Animation og placering */
 .fish3 {
@@ -173,8 +169,6 @@ body {
   }
 }
 
-
-
 /* Fisk 5 Animation og placering */
 .fish5 {
   position: absolute;
@@ -205,7 +199,6 @@ body {
     transform: translateX(0) rotateY(180deg);
   }
 }
-
 
 /* Fisk 6 Animation og placering */
 .fish6 {
@@ -249,16 +242,17 @@ body {
 }
 
 .bubble {
-    position: absolute;
-    width: 40px;
-    cursor: pointer;
-    transition: transform 0.2s, opacity 0.2s;
-    opacity: 0.6;
+  position: absolute;
+  width: 40px;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    opacity 0.2s;
+  opacity: 0.6;
 }
 
-
 /* Food section */
-#food-popup {
+#food-popup .popup-indhold {
   padding: 32px 0;
   display: flex;
   flex-direction: column;
@@ -266,10 +260,12 @@ body {
   gap: 34px;
 }
 
-#food-popup .foods {
+#food-popup .popup-indhold .foods {
   display: flex;
   gap: 34px;
 }
+
+
 
 /* .bubble {
  animation: floatUp 5s linear infinite;

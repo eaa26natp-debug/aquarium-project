@@ -9,7 +9,7 @@
   <body>
     <audio id="bg-sound" src="sound/water-noises.mp3" loop></audio>
 
-    <div id="fiske-popup" class="popup-hidden">
+    <div id="fiske-popup" class="fiske-popup popup-hidden">
       <img
         src="imges/section-background.png"
         alt="popup background"
@@ -20,8 +20,33 @@
         <h2 id="popup-navn"></h2>
         <p id="popup-latin"></p>
         <p id="popup-tekst"></p>
+        <button id="food-btn">food</button>
       </div>
+      <button class="go-back">tilbage</button>
     </div>
+
+    <!-- Food popup for fish -->
+    <section id="food-popup" class="fiske-popup popup-hidden">
+      <img
+        src="imges/section-background.png"
+        alt="popup background"
+        class="popup-boble"
+      />
+      <div class="popup-indhold">
+        <h2>Animal</h2>
+        <div class="foods">
+          <p>food1</p>
+          <p>food1</p>
+          <p>food1</p>
+        </div>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut eius
+          tempora ipsa animi? Sunt vitae, obcaecati, autem ab sint ex, fugiat
+          recusandae libero dolor iusto nihil at ratione commodi vel.
+        </p>
+        <button class="go-back">tilbage</button>
+      </div>
+    </section>
 
     <div class="allFish">
       <img
@@ -50,8 +75,18 @@
           src="imges/fish/orangefish.gif"
           alt="orange fisk"
         />
-        <img class="fish2" id="fishD" src="imges/fish/bluefish.gif" alt="blå fisk" />
-        <img class="fish2" id="fishE" src="imges/fish/redfish.gif" alt="rød fisk" />
+        <img
+          class="fish2"
+          id="fishD"
+          src="imges/fish/bluefish.gif"
+          alt="blå fisk"
+        />
+        <img
+          class="fish2"
+          id="fishE"
+          src="imges/fish/redfish.gif"
+          alt="rød fisk"
+        />
         <img
           class="fish2"
           id="fishF"
@@ -89,23 +124,12 @@
     <img id="bubble1" src="imges/bubble/bubble.png" alt="bobble" />
     <img src="imges/icons/bobbel-lil2.png" alt="lille bobble" />
 
-    <!-- Food popup for fish -->
-    <section id="food-popup">
-      <h2>Animal</h2>
-      <div class="foods">
-        <p>food1</p>
-        <p>food1</p>
-        <p>food1</p>
-      </div>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut eius
-        tempora ipsa animi? Sunt vitae, obcaecati, autem ab sint ex, fugiat
-        recusandae libero dolor iusto nihil at ratione commodi vel.
-      </p>
-    </section>
-
-    <img id="backBtn" src="imges/bobbel-lil2.png" alt="back" style="cursor:pointer;">
-    
+    <img
+      id="backBtn"
+      src="imges/bobbel-lil2.png"
+      alt="back"
+      style="cursor: pointer"
+    />
 
     <script src="js/script.js"></script>
   </body>
