@@ -45,7 +45,7 @@ body {
 }
 
 .popup-boble {
-  width: 1000px; /* tilpas boble */
+  width: 100%; /* tilpas boble */
 }
 
 .popup-indhold {
@@ -245,15 +245,23 @@ body {
   }
 }
 
-/* Bubble */
+/* Bubble
 #bubble1 {
   transition: opacity 0.3s;
   position: absolute;
   bottom: 0;
-  right: 50px;
+  right: 30px;
   width: 100px;
   cursor: pointer;
 }
+#bubble2 {
+  transition: opacity 0.3s;
+  position: absolute;
+  bottom: 0;
+  right: 130px;
+  width: 100px;
+  cursor: pointer;
+} */
 
 .bubble {
   position: absolute;

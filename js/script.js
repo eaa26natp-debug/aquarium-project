@@ -19,27 +19,46 @@ const audio = document.getElementById("bg-sound");
 audio.play();
 //document.removeEventListener("click", startSound);
 
-const bubble = document.getElementById("bubble1");
+const bubble = document.getElementById("bubble");
 const sound = new Audio("sound/bubble-pop.mp3");
 console.log(bubble);
 
+// const bubble2 = document.getElementById("bubble2");
+// const sound2 = new Audio("sound/bubble-pop.mp3");
+// console.log(bubble);
 
 
-// Pop boblen på klik
-bubble.addEventListener("click", () => {
-  sound.currentTime = 0;
-  sound.play();
-  console.log("test");
+// // Pop boblen1 på klik
+// bubble2.addEventListener("click", () => {
+//   sound.currentTime = 0;
+//   sound.play();
+//   console.log("test");
 
-  bubble.style.transform = "scale(1.3)";
-  bubble.style.opacity = "0";
-  console.log("test");
+//   bubble2.style.transform = "scale(1.3)";
+//   bubble2.style.opacity = "0";
+//   console.log("test");
 
-  setTimeout(() => {
-    bubble.style.transform = "scale(1)";
-    bubble.style.opacity = "1";
-  }, 300);
-});
+//   setTimeout(() => {
+//     bubble2.style.transform = "scale(1)";
+//     bubble2.style.opacity = "1";
+//   }, 300);
+// });
+
+// // Pop boblen2 på klik
+// bubble2.addEventListener("click", () => {
+//   sound.currentTime = 0;
+//   sound.play();
+//   console.log("test");
+
+//   bubble.style.transform = "scale(1.3)";
+//   bubble.style.opacity = "0";
+//   console.log("test");
+
+//   setTimeout(() => {
+//     bubble.style.transform = "scale(1)";
+//     bubble.style.opacity = "1";
+//   }, 300);
+// });
 
 /* Små bobler */
 function spawnBubble() {
@@ -72,6 +91,18 @@ function spawnBubble() {
             clearInterval(interval);
         }, 200);
     });
+
+    bubble.addEventListener("click", () => {
+    sound.currentTime = 0; // gør at lyden kan spilles hurtigt igen
+    sound.play();
+
+    bubble.style.opacity = "0";
+
+    setTimeout(() => {
+        bubble.remove();
+        clearInterval(interval);
+    }, 200);
+});
 };
 setInterval(spawnBubble, 3000); // ny boble hver 1 sekund
 
