@@ -175,7 +175,7 @@
   left: 8vw;
 }
 
-/* Rød koral i baggrunden position og størrelse */
+/* Rød koral i baggrunden position og størrelse + animation */
 .coralRedGroup {
   position: absolute;
   bottom: 2vh;
@@ -192,22 +192,30 @@
   width: 10vw;
   bottom: 3vw;
   left: 1vw;
+  animation: wiggle1 4s ease infinite;
+  transform-origin: bottom center;
 }
 
 #coralRed2 {
   width: 8vw;
   bottom: 1.5vw;
   left: 0vw;
+  animation: wiggle1 5s ease infinite;
+  transform-origin: bottom center;
 }
 
 #coralRed3 {
   width: 7vw;
   bottom: 1vw;
   left: 4.5vw;
+  animation: wiggle1 5s ease infinite;
+  transform-origin: bottom center;
 }
 
 #coralRed4 {
   width: 2vw;
   bottom: 1vw;
   left: 2vw;
+  animation: wiggle1 4s ease infinite;
+  transform-origin: bottom center;
 }
