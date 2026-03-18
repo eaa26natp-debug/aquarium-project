@@ -341,3 +341,25 @@ body {
   bottom: 1vh;
   left: 14%;
 }
+
+/* Popup knapper */
+.popup-knapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 80px;
+}
+
+.popup-knap {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  padding: 0;
+}
+
+.popup-knap img {
+  width: 100%;
+  height: 100%;
+}
