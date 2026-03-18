@@ -6,7 +6,7 @@
     "race": "Revfisk",
 
     "habitat": "Lever ved koralrev i tropiske havområder",
-    "havitat-text": "Jeg bor ved koralrev i varme havområder, hvor der er masser af liv omkring mig. Jeg svømmer ofte sammen med andre fisk over revet, men holder mig tæt på gode gemmesteder. Så kan jeg hurtigt smutte væk, hvis jeg bliver bange.",
+    "habitat-text": "Jeg bor ved koralrev i varme havområder, hvor der er masser af liv omkring mig. Jeg svømmer ofte sammen med andre fisk over revet, men holder mig tæt på gode gemmesteder. Så kan jeg hurtigt smutte væk, hvis jeg bliver bange.",
 
     "food": [
       { "Plankton": "planktons-icon.svg" },
@@ -30,7 +30,7 @@
     "race": "Katadrom vandrefisk",
 
     "habitat": "Lever i åer, søer, fjorde og kystområder",
-    "havitat-text": "Jeg lever i åer, søer, fjorde og ved kyster. Jeg kan godt lide steder med planter, mudder og gode gemmesteder, hvor jeg kan skjule mig og føle mig tryg.",
+    "habitat-text": "Jeg lever i åer, søer, fjorde og ved kyster. Jeg kan godt lide steder med planter, mudder og gode gemmesteder, hvor jeg kan skjule mig og føle mig tryg.",
 
     "food": [
       { "Insektlarver": "worm-icon.svg" },
@@ -56,7 +56,7 @@
     "race": "Revfisk",
 
     "habitat": "Lever ved koralrev, klipper og huler i Caribien",
-    "havitat-text": "Jeg bor i det varme hav ved koralrev og klipper. Jeg elsker små huler, sprækker og gemmesteder, hvor jeg hurtigt kan smutte ind, hvis jeg bliver forskrækket. Jeg kan godt lide at være tæt på mit skjul, så jeg føler mig tryg.",
+    "habitat-text": "Jeg bor i det varme hav ved koralrev og klipper. Jeg elsker små huler, sprækker og gemmesteder, hvor jeg hurtigt kan smutte ind, hvis jeg bliver forskrækket. Jeg kan godt lide at være tæt på mit skjul, så jeg føler mig tryg.",
 
     "food": [
       { "Plankton": "planktons-icon.svg" },
@@ -81,7 +81,7 @@
     "race": "Revfisk",
 
     "habitat": "Lever ved tropiske koralrev i Stillehavet",
-    "havitat-text": "Jeg lever ved tropiske koralrev i Stillehavet, især omkring Hawaii, hvor der er klipper, koraller og masser af alger. Her svømmer jeg rundt og finder både mad og gode steder at gemme mig.",
+    "habitat-text": "Jeg lever ved tropiske koralrev i Stillehavet, især omkring Hawaii, hvor der er klipper, koraller og masser af alger. Her svømmer jeg rundt og finder både mad og gode steder at gemme mig.",
 
     "food": [
       { "Alger": "algae-icon.svg" },
@@ -107,7 +107,7 @@
     "race": "Revfisk",
 
     "habitat": "Lever ved koralrev, klipper og havgræs i Atlanterhavet",
-    "havitat-text": "Jeg bor ved koralrev, klipper og nogle gange ved havgræs i det varme hav. Du kan finde mig i Caribien, ved Bahamas, Florida og andre steder i det vestlige Atlanterhav. Her finder jeg masser af mad og gode steder at gemme mig mellem rev og sten.",
+    "habitat-text": "Jeg bor ved koralrev, klipper og nogle gange ved havgræs i det varme hav. Du kan finde mig i Caribien, ved Bahamas, Florida og andre steder i det vestlige Atlanterhav. Her finder jeg masser af mad og gode steder at gemme mig mellem rev og sten.",
 
     "food": [
       { "Alger": "algae-icon.svg" },
@@ -133,7 +133,7 @@
     "race": "Revfisk",
 
     "habitat": "Lever ved koralrev, klipper og havgræs i Atlanterhavet",
-    "havitat-text": "Jeg bor ved koralrev, klipper og nogle gange ved havgræs i det varme hav. Du kan finde mig i Caribien, ved Bahamas, Florida og andre steder i det vestlige Atlanterhav. Her finder jeg masser af mad og gode steder at gemme mig mellem rev og sten.",
+    "habitat-text": "Jeg bor ved koralrev, klipper og nogle gange ved havgræs i det varme hav. Du kan finde mig i Caribien, ved Bahamas, Florida og andre steder i det vestlige Atlanterhav. Her finder jeg masser af mad og gode steder at gemme mig mellem rev og sten.",
 
     "food": [
       { "Alger": "algae-icon.svg" },
