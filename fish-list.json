@@ -1,11 +1,12 @@
 [
   {
+    "id": "fisk-lyrehale",
     "name": "Lyrehale Anthias",
     "latinsk-name": "(Pseudanthias squamipinnis)",
     "race": "Revfisk",
 
     "habitat": "Lever ved koralrev i tropiske havområder",
-    "havitat-text": "Jeg bor ved koralrev i varme havområder, hvor der er masser af liv omkring mig. Jeg svømmer ofte sammen med andre fisk over revet, men holder mig tæt på gode gemmesteder. Så kan jeg hurtigt smutte væk, hvis jeg bliver bange.",
+    "habitat-text": "Jeg bor ved koralrev i varme havområder, hvor der er masser af liv omkring mig. Jeg svømmer ofte sammen med andre fisk over revet, men holder mig tæt på gode gemmesteder. Så kan jeg hurtigt smutte væk, hvis jeg bliver bange.",
 
     "food": [
       { "Plankton": "planktons-icon.svg" },
@@ -23,12 +24,13 @@
     "read-more-3": "Fisken bruger en stor del af dagen på at fange plankton i det frie vand. En af de mest spændende ting ved lyretail anthias er dens sociale liv. "
   },
   {
+    "id": "fisk-eeal",
     "name": "Europæisk Ål",
     "latinsk-name": "(Anguilla anguilla)",
     "race": "Katadrom vandrefisk",
 
     "habitat": "Lever i åer, søer, fjorde og kystområder",
-    "havitat-text": "Jeg lever i åer, søer, fjorde og ved kyster. Jeg kan godt lide steder med planter, mudder og gode gemmesteder, hvor jeg kan skjule mig og føle mig tryg.",
+    "habitat-text": "Jeg lever i åer, søer, fjorde og ved kyster. Jeg kan godt lide steder med planter, mudder og gode gemmesteder, hvor jeg kan skjule mig og føle mig tryg.",
 
     "food": [
       { "Insektlarver": "worm-icon.svg" },
@@ -48,12 +50,13 @@
     "read-more-3": "Europæisk ål er et rovdyr, som spiser små fisk, insektlarver, krebsdyr og andre smådyr, alt efter hvor den lever, og hvor stor den er."
   },
   {
+    "id": "fisk-royal-gramma",
     "name": "Royal gramma",
     "latinsk-name": "(Gramma loreto)",
     "race": "Revfisk",
 
     "habitat": "Lever ved koralrev, klipper og huler i Caribien",
-    "havitat-text": "Jeg bor i det varme hav ved koralrev og klipper. Jeg elsker små huler, sprækker og gemmesteder, hvor jeg hurtigt kan smutte ind, hvis jeg bliver forskrækket. Jeg kan godt lide at være tæt på mit skjul, så jeg føler mig tryg.",
+    "habitat-text": "Jeg bor i det varme hav ved koralrev og klipper. Jeg elsker små huler, sprækker og gemmesteder, hvor jeg hurtigt kan smutte ind, hvis jeg bliver forskrækket. Jeg kan godt lide at være tæt på mit skjul, så jeg føler mig tryg.",
 
     "food": [
       { "Plankton": "planktons-icon.svg" },
@@ -72,12 +75,13 @@
     "read-more-3": "Arten er generelt fredelig, men den kan være territorial over for andre fisk, der kommer for tæt på dens gemmested."
   },
   {
+    "id": "fisk-gul-kirugfisk",
     "name": "Gul kirurgfisk",
     "latinsk-name": "(Zebrasoma flavescens)",
     "race": "Revfisk",
 
     "habitat": "Lever ved tropiske koralrev i Stillehavet",
-    "havitat-text": "Jeg lever ved tropiske koralrev i Stillehavet, især omkring Hawaii, hvor der er klipper, koraller og masser af alger. Her svømmer jeg rundt og finder både mad og gode steder at gemme mig.",
+    "habitat-text": "Jeg lever ved tropiske koralrev i Stillehavet, især omkring Hawaii, hvor der er klipper, koraller og masser af alger. Her svømmer jeg rundt og finder både mad og gode steder at gemme mig.",
 
     "food": [
       { "Alger": "algae-icon.svg" },
@@ -96,12 +100,40 @@
     "read-more-3": "Den lever alene eller i mindre grupper og kan være territorial over for andre fisk."
   },
   {
-    "name": "Blå kirurgfisk",
+    
+    "id": "fisk-paletkirugfisk",
+    "name": "Paletkirurgfisk",
     "latinsk-name": "(Acanthurus Coeruleus)",
     "race": "Revfisk",
 
     "habitat": "Lever ved koralrev, klipper og havgræs i Atlanterhavet",
-    "havitat-text": "Jeg bor ved koralrev, klipper og nogle gange ved havgræs i det varme hav. Du kan finde mig i Caribien, ved Bahamas, Florida og andre steder i det vestlige Atlanterhav. Her finder jeg masser af mad og gode steder at gemme mig mellem rev og sten.",
+    "habitat-text": "Jeg bor ved koralrev, klipper og nogle gange ved havgræs i det varme hav. Du kan finde mig i Caribien, ved Bahamas, Florida og andre steder i det vestlige Atlanterhav. Her finder jeg masser af mad og gode steder at gemme mig mellem rev og sten.",
+
+    "food": [
+      { "Alger": "algae-icon.svg" },
+      { "Koreller": "coral-icon.svg" }
+    ],
+    "food-info": "Spiser mest alger og andet plantemateriale",
+    "food-text": "Jeg spiser mest alger, som jeg finder på sten, klipper og koraller. Nogle gange får jeg også lidt plankton med, når jeg svømmer rundt og leder efter mad.",
+
+    "size": "Ca. 20–39 cm",
+    "special": "Har en skarp pig ved halen og hjælper med at holde revet fri for alger",
+
+    "read-more-1": "Blå kirurgfisk, Acanthurus coeruleus, er en tropisk revfisk, som lever i det vestlige Atlanterhav. Den findes blandt andet i Caribien, ved Florida og Bahamas, hvor den holder til ved koralrev, klipper og områder med havgræs. Her finder den både føde og gode skjulesteder, og den svømmer ofte rundt tæt ved revet, hvor der er masser af liv og steder at gemme sig. Blå kirurgfisk kan blive op til omkring 39 cm lang, selv om mange er mindre. Den kendes på sin blå krop og på den skarpe pig ved halen, som er typisk for kirurgfisk.",
+
+    "read-more-2": "Arten spiser mest alger, som den græsser af sten, koraller og andre overflader på revet. Sådan hjælper den med at holde revet sundt og i balance, så alger ikke fylder for meget.",
+
+    "read-more-3": "Piggene ved halen kan bruges til forsvar, hvis fisken føler sig truet. Det gør blå kirurgfisk til en både flot og vigtig del af livet på koralrevet."
+  },
+  {
+    
+    "id": "fiske-gruppe",
+    "name": "Kirugfisk",
+    "latinsk-name": "(Acanthurus Coeruleus)",
+    "race": "Revfisk",
+
+    "habitat": "Lever ved koralrev, klipper og havgræs i Atlanterhavet",
+    "habitat-text": "Jeg bor ved koralrev, klipper og nogle gange ved havgræs i det varme hav. Du kan finde mig i Caribien, ved Bahamas, Florida og andre steder i det vestlige Atlanterhav. Her finder jeg masser af mad og gode steder at gemme mig mellem rev og sten.",
 
     "food": [
       { "Alger": "algae-icon.svg" },
