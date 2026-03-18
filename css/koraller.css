@@ -139,7 +139,6 @@
   right: 25vw;
   width: 20vw;
   height: 45vh;
-  border: red 2px solid;
 }
 
 .tangGreen {
@@ -150,11 +149,47 @@
   width: 16vw;
   bottom: 0;
   left: 0vw;
-  
 }
 
 #tangGreen2 {
   width: 14vw;
   bottom: 0;
   left: 8vw;
+}
+
+/* Rød koral i baggrunden position og størrelse */
+.coralRedGroup {
+  position: absolute;
+  bottom: 2vh;
+  left: 6vw;
+  width: 12vw;
+  height: 45vh;
+}
+
+.coralRed {
+  position: absolute;
+}
+
+#coralRed1 {
+  width: 10vw;
+  bottom: 3vw;
+  left: 1vw;
+}
+
+#coralRed2 {
+  width: 8vw;
+  bottom: 1.5vw;
+  left: 0vw;
+}
+
+#coralRed3 {
+  width: 7vw;
+  bottom: 1vw;
+  left: 4.5vw;
+}
+
+#coralRed4 {
+  width: 2vw;
+  bottom: 1vw;
+  left: 2vw;
 }
