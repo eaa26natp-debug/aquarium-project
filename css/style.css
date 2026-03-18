@@ -14,12 +14,40 @@ body {
   min-height: 100vh;
 }
 
+#fiske-popup {
+  position: fixed; /* fixed så den altid er midt på skærmen */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 100;
+  pointer-events: none;
+}
+
+#fiske-popup.popup-synlig {
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: all;
+}
+
+.popup-boble {
+  width: 420px; /* tilpas boble */
+}
+
+.popup-indhold {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 65%;
+}
+
 /* Fisk 1 Animation og placering */
 .fish1 {
   position: absolute;
-  width: 15vw;
-  bottom: 50vh;
-  left: calc(-15vw);
+  width: 12vw;
+  bottom: 55vh;
+  left: calc(-12vw);
   animation: fish1 20s ease-in-out infinite;
 }
 
@@ -28,17 +56,17 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(100vw + 20vw));
+    transform: translateX(calc(100vw + 12vw));
   }
 }
 
 
 
-/* Fish Group placering og størrelse */
+/* Fish Group placering og størrelse. */
 .fishGroup {
     position: absolute;
-    bottom: 18vh;
-    width: 21vw;
+    bottom: 10vh;
+    width: 22vw;
     height: 15vw;
 }
 
@@ -99,8 +127,8 @@ body {
 /* Fisk 3 Animation og placering */
 .fish3 {
   position: absolute;
-  width: 13vw;
-  bottom: 65vh;
+  width: 15vw;
+  bottom: 38vh;
   right: calc(-15vw);
   animation: fish3 30s ease-out infinite;
 }
@@ -109,22 +137,125 @@ body {
   0% {
     transform: translateX(0) rotateY(180deg);
   }
-  90%, 100% {
+  100% {
     transform: translateX(calc(-100vw - 15vw)) rotateY(180deg);
+  }
+}
+
+/* Fisk 4 Animation og placering */
+.fish4 {
+  position: absolute;
+  width: 15vw;
+  bottom: 70vh;
+  right: -15vw;
+  animation: fish4 16s ease-in-out infinite;
+}
+
+@keyframes fish4 {
+  0% {
+    transform: translateX(0) rotateY(180deg);
+  }
+
+  49% {
+    transform: translateX(-115vw) rotateY(180deg);
+  }
+
+  50% {
+    transform: translateX(-115vw) rotateY(0deg);
+  }
+
+  99% {
+    transform: translateX(0) rotateY(0deg);
+  }
+
+  100% {
+    transform: translateX(0) rotateY(180deg);
   }
 }
 
 
 
+/* Fisk 5 Animation og placering */
+.fish5 {
+  position: absolute;
+  width: 25vw;
+  bottom: 1vh;
+  left: 5vw;
+  animation: fish5 60s ease infinite;
+}
+
+@keyframes fish5 {
+  0% {
+    transform: translateX(0) rotateY(180deg);
+  }
+
+  49% {
+    transform: translateX(70vw) rotateY(180deg);
+  }
+
+  50% {
+    transform: translateX(70vw) rotateY(0deg);
+  }
+
+  99% {
+    transform: translateX(0) rotateY(0deg);
+  }
+
+  100% {
+    transform: translateX(0) rotateY(180deg);
+  }
+}
+
+
+/* Fisk 6 Animation og placering */
+.fish6 {
+  position: absolute;
+  width: 6vw;
+  bottom: 22vh;
+  right: -6vw;
+  animation: fish6 60s ease-in-out infinite;
+}
+
+@keyframes fish6 {
+  0% {
+    transform: translateX(0) rotateY(0deg);
+  }
+
+  49% {
+    transform: translateX(-106vw) rotateY(0deg);
+  }
+
+  50% {
+    transform: translateX(-106vw) rotateY(180deg);
+  }
+
+  99% {
+    transform: translateX(0) rotateY(180deg);
+  }
+
+  100% {
+    transform: translateX(0) rotateY(0deg);
+  }
+}
+
+/* Bubble */
 #bubble1 {
   transition: opacity 0.3s;
   position: absolute;
   bottom: 0;
-  left: 50%;
+  right: 50px;
   width: 100px;
   cursor: pointer;
-  
 }
+
+.bubble {
+    position: absolute;
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+    opacity: 0.6;
+}
+
 
 /* Food section */
 #food-popup {
@@ -140,7 +271,7 @@ body {
   gap: 34px;
 }
 
-.bubble {
+/* .bubble {
  animation: floatUp 5s linear infinite;
 }
 
@@ -151,4 +282,4 @@ body {
   to {
     bottom: 100vh;
 }
-}
+} */
