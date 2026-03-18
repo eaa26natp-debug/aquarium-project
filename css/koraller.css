@@ -226,3 +226,12 @@
   animation: wiggle1 4s ease infinite;
   transform-origin: bottom center;
 }
+
+
+/* Placering og størrelse af sten */
+.stone {
+  position: absolute;
+  width: 18vw;
+  bottom: 0.5vh;
+  left: 67vw;
+}
