@@ -118,6 +118,7 @@ function openPopup(fiskId) {
     console.log(fish.name);
   });
 
+  
   const fisk = fishList.find((f) => f.id === fiskId);
   if (!fisk) {
     console.warn("Ingen fisk fundet med id:", fiskId);
@@ -159,4 +160,16 @@ document.body.addEventListener("click", (e) => {
   if (!e.target.closest("#fiske-popup")) {
     closePopup();
   }
+}); 
+
+
+
+//Forstørrelse af rød koral vha klik
+const bubleCoral = document.getElementById("bubleCoral")
+
+bubleCoral.addEventListener("click", () => {
+  bubleCoral.classList.add("bigger");
+  setTimeout (function() {
+    bubleCoral.classList.remove("bigger");
+  }, 8000);
 });

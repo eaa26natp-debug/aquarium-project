@@ -14,6 +14,21 @@ body {
   min-height: 100vh;
 }
 
+body {
+  font-family: "Baloo Thambi 2";
+  h1 {
+    font-size: 7rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+}
+
 #fiske-popup {
   position: fixed; /* fixed så den altid er midt på skærmen */
   top: 50%;
@@ -30,7 +45,7 @@ body {
 }
 
 .popup-boble {
-  width: 420px; /* tilpas boble */
+  width: 100%; /* tilpas boble */
 }
 
 .popup-indhold {
@@ -60,57 +75,54 @@ body {
   }
 }
 
-
-
 /* Fish Group placering og størrelse. */
 .fishGroup {
-    position: absolute;
-    bottom: 10vh;
-    width: 22vw;
-    height: 15vw;
+  position: absolute;
+  bottom: 10vh;
+  width: 22vw;
+  height: 15vw;
 }
 
 .fish2 {
-    position: absolute;
-    width: 6vw;
+  position: absolute;
+  width: 6vw;
 }
 
 /* Placering af hver enkel fisk i fish Group */
- #fishA {
-    left: 3vw;
-    top: 0;
+#fishA {
+  left: 3vw;
+  top: 0;
 }
 
 #fishB {
-    left: 10vw;
-    top: 0;
+  left: 10vw;
+  top: 0;
 }
 
 #fishC {
-    left: 0vw;
-    top: 5vw;
+  left: 0vw;
+  top: 5vw;
 }
 
 #fishD {
-    left: 7vw;
-    top: 5vw;
+  left: 7vw;
+  top: 5vw;
 }
 
 #fishE {
-    left: 14vw;
-    top: 5vw;
+  left: 14vw;
+  top: 5vw;
 }
 
 #fishF {
-    left: 8vw;
-    top: 10vw;
+  left: 8vw;
+  top: 10vw;
 }
-
 
 /* fishGroup animation */
 .fishGroup {
-    left: calc(-22vw);
-    animation: fish2 25s ease infinite;
+  left: calc(-22vw);
+  animation: fish2 25s ease infinite;
 }
 
 @keyframes fish2 {
@@ -121,8 +133,6 @@ body {
     transform: translateX(calc(100vw + 22vw));
   }
 }
-
-
 
 /* Fisk 3 Animation og placering */
 .fish3 {
@@ -173,8 +183,6 @@ body {
   }
 }
 
-
-
 /* Fisk 5 Animation og placering */
 .fish5 {
   position: absolute;
@@ -205,7 +213,6 @@ body {
     transform: translateX(0) rotateY(180deg);
   }
 }
-
 
 /* Fisk 6 Animation og placering */
 .fish6 {
@@ -257,13 +264,14 @@ body {
 } */
 
 .bubble {
-    position: absolute;
-    width: 40px;
-    cursor: pointer;
-    transition: transform 0.2s, opacity 0.2s;
-    opacity: 0.6;
+  position: absolute;
+  width: 40px;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    opacity 0.2s;
+  opacity: 0.6;
 }
-
 
 /* Food section */
 #food-popup {
@@ -279,3 +287,65 @@ body {
   gap: 34px;
 }
 
+/* .bubble {
+ animation: floatUp 5s linear infinite;
+}
+
+@keyframes floatUp {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 100vh;
+}
+} */
+
+/* Bobbel koral placering og størrelse */
+#bubleCoral {
+  position: absolute;
+  width: 10vw;
+  bottom: 0.5vh;
+  left: 58%;
+  cursor: pointer;
+}
+
+/* Forstørrelse af koral, når man klikker */
+#bubleCoral.bigger {
+  transform: scale(1.2);
+  animation: big 8s ease;
+  transform-origin: bottom center;
+}
+
+@keyframes big {
+  0% {
+    transform: skew(0deg) scale(1.2);
+  }
+  25% {
+    transform: skew(-10deg) scale(1.2);
+  }
+  50% {
+    transform: skew(10deg) scale(1.2);
+  }
+  75% {
+    transform: skew(-10deg) scale(1.2);
+  }
+  100% {
+    transform: skew(0deg) scale(1.2);
+  }
+}
+
+/* Grøn tang placering og størrelse */
+#greenTang {
+  position: absolute;
+  width: 10vw;
+  bottom: 0vh;
+  left: 35%;
+}
+
+/* Rød koral placering og størrelse */
+#redCoral {
+  position: absolute;
+  width: 8vw;
+  bottom: 1vh;
+  left: 14%;
+}
