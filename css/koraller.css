@@ -99,3 +99,35 @@
     transform: rotate(0deg) scale(1.2);
   }
 }
+
+
+/* Grøn koral placering og størrelse */
+.greenCoralGroup {
+  position: absolute;
+  bottom: 4vh;
+  right: 0vw;
+  width: 22vw;
+  height: 60vh;
+}
+
+.greenCoral {
+  position: absolute;
+}
+
+#greenCoral1 {
+  bottom: 0vw;
+  left: 4vw;
+  width: 15vw;
+}
+
+#greenCoral2 {
+  bottom: 1vw;
+  left: 10vw;
+  width: 12vw;
+}
+
+#greenCoral3 {
+  bottom: 1vw;
+  left: 6vw;
+  width: 9vw;
+}
