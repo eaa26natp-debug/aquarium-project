@@ -45,7 +45,7 @@ body {
 }
 
 .popup-boble {
-  width: 1000px; /* tilpas boble */
+  width: 100%; /* tilpas boble */
 }
 
 .popup-indhold {
