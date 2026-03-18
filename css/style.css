@@ -292,7 +292,24 @@ body {
   width: 10vw;
   bottom: 0.5vh;
   left: 58%;
+  cursor: pointer;
 }
+
+/* Forstørrelse af koral, når man klikker */
+#bubleCoral.bigger {
+transform: scale(1.2);
+animation: big 8s ease;
+transform-origin: bottom center;
+}
+
+@keyframes big {
+  0% {transform: skew(0deg) scale(1.2);}
+  25% {transform: skew(-10deg) scale(1.2);}
+  50% {transform: skew(10deg) scale(1.2);}
+  75% {transform: skew(-10deg) scale(1.2);}
+  100% {transform: skew(0deg) scale(1.2);}
+}
+
 
 /* Grøn tang placering og størrelse */
 #greenTang {
