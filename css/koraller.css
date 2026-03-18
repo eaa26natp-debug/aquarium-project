@@ -242,4 +242,18 @@
   width: 14vw;
   bottom: 3vh;
   left: 49vw;
+  animation: scaleBuble 4s ease infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes scaleBuble {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
