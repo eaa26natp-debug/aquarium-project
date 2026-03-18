@@ -57,6 +57,28 @@ body {
   width: 65%;
 }
 
+/* Popup knapper */
+.popup-knapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.popup-knap {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+}
+
+.popup-knap img {
+  width: 100%;
+  height: 100%;
+}
+
 /* Fisk 1 Animation og placering */
 .fish1 {
   position: absolute;
