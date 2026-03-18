@@ -14,8 +14,22 @@ body {
   min-height: 100vh;
 }
 
-/* Synlighed af popups med info */
-.fiske-popup {
+body {
+  font-family: "Baloo Thambi 2";
+  h1 {
+    font-size: 7rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+}
+
+#fiske-popup {
   position: fixed; /* fixed så den altid er midt på skærmen */
   top: 50%;
   left: 50%;
@@ -31,7 +45,7 @@ body {
 }
 
 .popup-boble {
-  width: 420px; /* tilpas boble */
+  width: 100%; /* tilpas boble */
 }
 
 .popup-indhold {
@@ -41,6 +55,28 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   width: 65%;
+}
+
+/* Popup knapper */
+.popup-knapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.popup-knap {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+}
+
+.popup-knap img {
+  width: 100%;
+  height: 100%;
 }
 
 /* Fisk 1 Animation og placering */
@@ -231,15 +267,23 @@ body {
   }
 }
 
-/* Bubble */
+/* Bubble
 #bubble1 {
   transition: opacity 0.3s;
   position: absolute;
   bottom: 0;
-  right: 50px;
+  right: 30px;
   width: 100px;
   cursor: pointer;
 }
+#bubble2 {
+  transition: opacity 0.3s;
+  position: absolute;
+  bottom: 0;
+  right: 130px;
+  width: 100px;
+  cursor: pointer;
+} */
 
 .bubble {
   position: absolute;
@@ -279,3 +323,105 @@ body {
     bottom: 100vh;
 }
 } */
+
+/* Bobbel koral placering og størrelse */
+#bubleCoral {
+  position: absolute;
+  width: 10vw;
+  bottom: 0.5vh;
+  left: 58%;
+  cursor: pointer;
+}
+
+/* Forstørrelse af koral, når man klikker */
+#bubleCoral.bigger {
+  transform: scale(1.2);
+  animation: bigBuble 8s ease;
+  transform-origin: bottom center;
+}
+
+@keyframes bigBuble {
+  0% {
+    transform: skew(0deg) scale(1.2);
+  }
+  25% {
+    transform: skew(-10deg) scale(1.2);
+  }
+  50% {
+    transform: skew(10deg) scale(1.2);
+  }
+  75% {
+    transform: skew(-10deg) scale(1.2);
+  }
+  100% {
+    transform: skew(0deg) scale(1.2);
+  }
+}
+
+/* Grøn tang placering og størrelse */
+#greenTang {
+  position: absolute;
+  width: 10vw;
+  bottom: 0vh;
+  left: 35%;
+  cursor: pointer;
+}
+
+/* Forstørrelse af grøn tang, når man klikker */
+#greenTang.biggerGreen {
+  transform: scale(1.2);
+  animation: bigGreen 8s ease;
+  transform-origin: bottom center;
+}
+
+@keyframes bigGreen {
+  0% {
+    transform: skew(0deg) scale(1.2);
+  }
+  25% {
+    transform: skew(-8deg) scale(1.2);
+  }
+  50% {
+    transform: skew(8deg) scale(1.2);
+  }
+  75% {
+    transform: skew(-8deg) scale(1.2);
+  }
+  100% {
+    transform: skew(0deg) scale(1.2);
+  }
+}
+
+/* Rød koral placering og størrelse */
+#redCoral {
+  position: absolute;
+  width: 8vw;
+  bottom: 1vh;
+  left: 14%;
+  cursor: pointer;
+}
+
+/* Forstørrelse af Rød koral, når man klikker */
+#redCoral.biggerRed {
+  transform: scale(1.2);
+  animation: bigRed 8s ease;
+  transform-origin: bottom center;
+}
+
+@keyframes bigRed {
+  0% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  25% {
+    transform: rotate(-8deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(8deg) scale(1.2);
+  }
+  75% {
+    transform: rotate(-8deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(0deg) scale(1.2);
+  }
+}

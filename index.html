@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akvarium backup</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo Thambi 2"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <audio id="bg-sound" src="sound/water-noises.mp3" loop></audio>
@@ -15,12 +19,23 @@
         alt="popup background"
         class="popup-boble"
       />
-      <!-- Tekst-indholdet ligger OVEN PÅ boble-billedet. -->
+
       <div class="popup-indhold">
         <h2 id="popup-navn"></h2>
         <p id="popup-latin"></p>
         <p id="popup-tekst"></p>
-        <button id="food-btn">food</button>
+
+        <div class="popup-knapper">
+          <button class="popup-knap" onclick="showSection('habitat')">
+            <img src="imges/icons/info-icons/global-icon.svg" alt="habitat" />
+          </button>
+          <button class="popup-knap" onclick="showSection('laes-mere')">
+            <img src="imges/icons/info-icons/info-icon.svg" alt="læs mere" />
+          </button>
+          <button class="popup-knap" onclick="showSection('mad')">
+            <img src="imges/icons/info-icons/food-icon.svg" alt="mad" />
+          </button>
+        </div>
       </div>
       <button class="go-back">tilbage</button>
     </div>
@@ -114,15 +129,27 @@
         id="fisk-eeal"
       />
       <img
-        src="imges/fish/mahdi-fisk.png"
+        src="imges/fish/mahdi-fish.gif"
         alt="royal gramma"
         class="fish6"
         id="fisk-royal-gramma"
       />
     </div>
 
+    <img
+      src="imges/decorations/buble-coral.png"
+      alt="Bobbel Koral"
+      id="bubleCoral"
+    />
+    <img
+      src="imges/decorations/tang-green.png"
+      alt="Grøn tang"
+      id="greenTang"
+    />
+    <img src="imges/decorations/red-coral.png" alt="Rød koral" id="redCoral" />
+
     <img id="bubble1" src="imges/bubble/bubble.png" alt="bobble" />
-    <img src="imges/icons/bobbel-lil2.png" alt="lille bobble" />
+    <img src="imges/bubble/bobbel-lil2.png" alt="lille bobble" />
 
     <img
       id="backBtn"

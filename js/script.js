@@ -18,26 +18,11 @@ const audio = document.getElementById("bg-sound");
 audio.play();
 //document.removeEventListener("click", startSound);
 
-const bubble = document.getElementById("bubble1");
+const bubble = document.getElementById("bubble");
 const sound = new Audio("sound/bubble-pop.mp3");
 console.log(bubble);
 
-// Pop boblen på klik
-bubble.addEventListener("click", () => {
-  sound.currentTime = 0;
-  sound.play();
-  console.log("test");
-
-  bubble.style.transform = "scale(1.3)";
-  bubble.style.opacity = "0";
-  console.log("test");
-
-  setTimeout(() => {
-    bubble.style.transform = "scale(1)";
-    bubble.style.opacity = "1";
-  }, 300);
-});
-
+/* Små bobler */
 function spawnBubble() {
   const bubble = document.createElement("img");
   bubble.src = "imges/bubble/bubble.png";
@@ -68,108 +53,78 @@ function spawnBubble() {
       clearInterval(interval);
     }, 200);
   });
+
+  bubble.addEventListener("click", () => {
+    sound.currentTime = 0; // gør at lyden kan spilles hurtigt igen
+    sound.play();
+
+    bubble.style.opacity = "0";
+
+    setTimeout(() => {
+      bubble.remove();
+      clearInterval(interval);
+    }, 200);
+  });
 }
 setInterval(spawnBubble, 3000); // ny boble hver 1 sekund
 
-/* Fiskedata og popup-funktionalitet */
-const fiskData = {
-  lyrehale: {
-    navn: "Lyrehale Anthias",
-    latin: "Pseudanthias squamipinnis",
-    tekst:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  gulKirugfisk: {
-    navn: "Gul kirurgfisk",
-    latin: "Chelmon rostratus",
-    tekst:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  fiskeGruppe: {
-    navn: "Kirurgfisk",
-    latin: "Acanthurus nigricans",
-    tekst:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  paletKirugfisk: {
-    navn: "Paletkirurgfisk",
-    latin: "Paracanthurus hepatus",
-    tekst:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  eeal: {
-    navn: "Europæisk ål",
-    latin: "Anguilla anguilla",
-    tekst:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  royalGramma: {
-    navn: "Royal Gramma",
-    latin: "Haemulon cyanum",
-    tekst:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-};
-
+/* Popup */
 const popup = document.getElementById("fiske-popup");
 
-function åbnPopup(fiskId) {
-  const fisk = fiskData[fiskId];
-  if (!fisk) return;
+function openPopup(fiskId) {
+  // Finder fisken i JSON ud fra id-feltet
 
-  document.getElementById("popup-navn").textContent = fisk.navn;
-  document.getElementById("popup-latin").textContent = fisk.latin;
-  document.getElementById("popup-tekst").textContent = fisk.tekst;
+  console.log(fiskId);
+  console.log(fishList);
+  fishList.forEach((fish) => {
+    console.log(fish.name);
+  });
 
+  const fisk = fishList.find((f) => f.id === fiskId);
+  if (!fisk) {
+    console.warn("Ingen fisk fundet med id:", fiskId);
+    return;
+  }
+
+  document.getElementById("popup-navn").textContent = fisk.name;
+  document.getElementById("popup-latin").textContent = fisk["latinsk-name"];
+  document.getElementById("popup-tekst").textContent = fisk["food-text"];
+
+  popup.classList.remove("popup-hidden");
   popup.classList.add("popup-synlig");
 }
 
-function lukPopup() {
+function closePopup() {
   popup.classList.remove("popup-synlig");
+  popup.classList.add("popup-hidden");
 }
 
-// Klik på lyrehale åbner popup
-document.getElementById("fisk-lyrehale").addEventListener("click", (e) => {
-  e.stopPropagation();
-  åbnPopup("lyrehale");
-});
+function showSelection(name) {
+  document.querySelectorAll(".popup-sektion").forEach((s) => {});
+  document.getElementById("sektion-" + name).classList.add("aktiv");
+}
 
-// Klik på gul kirurgfisk åbner popup
-document.getElementById("fisk-gul-kirugfisk").addEventListener("click", (e) => {
-  e.stopPropagation();
-  åbnPopup("gulKirugfisk");
-});
+// Alle fiske-id'er matcher JSON's "id"-felt
+const fiskIds = [
+  "fisk-lyrehale",
+  "fisk-gul-kirugfisk",
+  "fisk-paletkirugfisk",
+  "fisk-eeal",
+  "fiske-gruppe",
+  "fisk-royal-gramma",
+];
 
-// Klik på paletkirugfisk åbner popup
-document
-  .getElementById("fisk-paletkirugfisk")
-  .addEventListener("click", (e) => {
+fiskIds.forEach((htmlId) => {
+  document.getElementById(htmlId).addEventListener("click", (e) => {
     e.stopPropagation();
-    åbnPopup("paletKirugfisk");
+    openPopup(htmlId);
   });
-
-// Klik på eeal åbner popup
-document.getElementById("fisk-eeal").addEventListener("click", (e) => {
-  e.stopPropagation();
-  åbnPopup("eeal");
 });
 
-// klik på fiskegruppe åbner popup
-document.getElementById("fiske-gruppe").addEventListener("click", (e) => {
-  e.stopPropagation();
-  åbnPopup("fiskeGruppe");
-});
-
-// Klik på royal gramma åbner popup
-document.getElementById("fisk-royal-gramma").addEventListener("click", (e) => {
-  e.stopPropagation();
-  åbnPopup("royalGramma");
-});
-
-// Klik udenfor boblen lukker den
+// Klik udenfor popup lukker den
 document.body.addEventListener("click", (e) => {
   if (!e.target.closest("#fiske-popup")) {
-    lukPopup();
+    closePopup();
   }
 });
 
@@ -183,11 +138,40 @@ goBackList.forEach((goBackBtn) => {
   });
 });
 
-
 /* Info redirect to food popup */
 const foodBtn = document.getElementById("food-btn");
 
 foodBtn.addEventListener("click", () => {
   document.getElementById("fiske-popup").classList.toggle("popup-synlig");
   document.getElementById("food-popup").classList.toggle("popup-synlig");
+});
+
+//Forstørrelse af rød koral vha klik
+const bubleCoral = document.getElementById("bubleCoral");
+
+bubleCoral.addEventListener("click", () => {
+  bubleCoral.classList.add("bigger");
+  setTimeout(function () {
+    bubleCoral.classList.remove("bigger");
+  }, 8000);
+});
+
+//Forstørrelse af grøn tang vha klik
+const greenTang = document.getElementById("greenTang");
+
+greenTang.addEventListener("click", () => {
+  greenTang.classList.add("biggerGreen");
+  setTimeout(function () {
+    greenTang.classList.remove("biggerGreen");
+  }, 8000);
+});
+
+//Forstørrelse af grøn tang vha klik
+const redCoral = document.getElementById("redCoral");
+
+redCoral.addEventListener("click", () => {
+  redCoral.classList.add("biggerRed");
+  setTimeout(function () {
+    redCoral.classList.remove("biggerRed");
+  }, 8000);
 });
