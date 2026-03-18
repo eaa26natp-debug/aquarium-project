@@ -1,0 +1,187 @@
+/* Fisk 1 Animation og placering */
+.fish1 {
+  position: absolute;
+  width: 12vw;
+  bottom: 55vh;
+  left: calc(-12vw);
+  animation: fish1 20s ease-in-out infinite;
+}
+
+@keyframes fish1 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(100vw + 12vw));
+  }
+}
+
+/* Fish Group placering og størrelse. */
+.fishGroup {
+  position: absolute;
+  bottom: 10vh;
+  width: 22vw;
+  height: 15vw;
+}
+
+.fish2 {
+  position: absolute;
+  width: 6vw;
+}
+
+/* Placering af hver enkel fisk i fish Group */
+#fishA {
+  left: 3vw;
+  top: 0;
+}
+
+#fishB {
+  left: 10vw;
+  top: 0;
+}
+
+#fishC {
+  left: 0vw;
+  top: 5vw;
+}
+
+#fishD {
+  left: 7vw;
+  top: 5vw;
+}
+
+#fishE {
+  left: 14vw;
+  top: 5vw;
+}
+
+#fishF {
+  left: 8vw;
+  top: 10vw;
+}
+
+/* fishGroup animation */
+.fishGroup {
+  left: calc(-22vw);
+  animation: fish2 25s ease infinite;
+}
+
+@keyframes fish2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(100vw + 22vw));
+  }
+}
+
+/* Fisk 3 Animation og placering */
+.fish3 {
+  position: absolute;
+  width: 15vw;
+  bottom: 38vh;
+  right: calc(-15vw);
+  animation: fish3 30s ease-out infinite;
+}
+
+@keyframes fish3 {
+  0% {
+    transform: translateX(0) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(calc(-100vw - 15vw)) rotateY(180deg);
+  }
+}
+
+/* Fisk 4 Animation og placering */
+.fish4 {
+  position: absolute;
+  width: 15vw;
+  bottom: 70vh;
+  right: -15vw;
+  animation: fish4 16s ease-in-out infinite;
+}
+
+@keyframes fish4 {
+  0% {
+    transform: translateX(0) rotateY(180deg);
+  }
+
+  49% {
+    transform: translateX(-115vw) rotateY(180deg);
+  }
+
+  50% {
+    transform: translateX(-115vw) rotateY(0deg);
+  }
+
+  99% {
+    transform: translateX(0) rotateY(0deg);
+  }
+
+  100% {
+    transform: translateX(0) rotateY(180deg);
+  }
+}
+
+/* Fisk 5 Animation og placering */
+.fish5 {
+  position: absolute;
+  width: 25vw;
+  bottom: 1vh;
+  left: 5vw;
+  animation: fish5 60s ease infinite;
+}
+
+@keyframes fish5 {
+  0% {
+    transform: translateX(0) rotateY(180deg);
+  }
+
+  49% {
+    transform: translateX(70vw) rotateY(180deg);
+  }
+
+  50% {
+    transform: translateX(70vw) rotateY(0deg);
+  }
+
+  99% {
+    transform: translateX(0) rotateY(0deg);
+  }
+
+  100% {
+    transform: translateX(0) rotateY(180deg);
+  }
+}
+
+/* Fisk 6 Animation og placering */
+.fish6 {
+  position: absolute;
+  width: 6vw;
+  bottom: 22vh;
+  right: -6vw;
+  animation: fish6 60s ease-in-out infinite;
+}
+
+@keyframes fish6 {
+  0% {
+    transform: translateX(0) rotateY(0deg);
+  }
+
+  49% {
+    transform: translateX(-106vw) rotateY(0deg);
+  }
+
+  50% {
+    transform: translateX(-106vw) rotateY(180deg);
+  }
+
+  99% {
+    transform: translateX(0) rotateY(180deg);
+  }
+
+  100% {
+    transform: translateX(0) rotateY(0deg);
+  }
+}
