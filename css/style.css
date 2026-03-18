@@ -283,3 +283,29 @@ body {
     bottom: 100vh;
 }
 } */
+
+
+
+/* Bobbel koral placering og størrelse */
+#bubleCoral {
+  position: absolute;
+  width: 10vw;
+  bottom: 0.5vh;
+  left: 58%;
+}
+
+/* Grøn tang placering og størrelse */
+#greenTang {
+  position: absolute;
+  width: 10vw;
+  bottom: 0vh;
+  left: 35%;
+}
+
+/* Rød koral placering og størrelse */
+#redCoral {
+  position: absolute;
+  width: 8vw;
+  bottom: 1vh;
+  left: 14%;
+}
