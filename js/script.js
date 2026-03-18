@@ -2,32 +2,38 @@
 
 /* Fetches the fishes data from .json file */
 let fishList = [];
-
 function GetFishData() {
   fetch("../fish-list.json")
-    .then((response) => response.json())
-    .then((data) => {
-      fishList = data;
-    })
-    .catch((error) => {
-      console.error("Could not find fish data", error);
-    });
+  .then(response => response.json())
+  .then(data => {
+    fishList = data;
+  })  
+  .catch(error => {
+    console.error("Could not find fish data", error);
+  })
 }
 GetFishData();
 
-/* Lyd */
+
 const audio = document.getElementById("bg-sound");
 audio.play();
+//document.removeEventListener("click", startSound);
 
 const bubble = document.getElementById("bubble1");
 const sound = new Audio("sound/bubble-pop.mp3");
+console.log(bubble);
 
+
+
+// Pop boblen på klik
 bubble.addEventListener("click", () => {
   sound.currentTime = 0;
   sound.play();
+  console.log("test");
 
   bubble.style.transform = "scale(1.3)";
   bubble.style.opacity = "0";
+  console.log("test");
 
   setTimeout(() => {
     bubble.style.transform = "scale(1)";
@@ -37,37 +43,37 @@ bubble.addEventListener("click", () => {
 
 /* Små bobler */
 function spawnBubble() {
-  const bubble = document.createElement("img");
-  bubble.src = "imges/bubble.png";
-  bubble.classList.add("bubble");
+    const bubble = document.createElement("img");
+    bubble.src = "imges/bubble/bubble.png";
+    bubble.classList.add("bubble");
 
-  let x = Math.random() * window.innerWidth;
-  let y = 0;
+    let x = Math.random() * window.innerWidth;
+    let y = 0;
 
-  bubble.style.left = x + "px";
-  bubble.style.bottom = "0px";
+    bubble.style.left = x + "px";
+    bubble.style.bottom = "0px";
 
-  document.body.appendChild(bubble);
+    document.body.appendChild(bubble);
 
-  const interval = setInterval(() => {
-    y += 1;
-    bubble.style.bottom = y + "px";
+    const interval = setInterval(() => {
+        y += 1;
+        bubble.style.bottom = y + "px";
 
-    if (y > window.innerHeight) {
-      bubble.remove();
-      clearInterval(interval);
-    }
-  }, 20);
+        if (y > window.innerHeight) {
+            bubble.remove();
+            clearInterval(interval);
+        }
+    }, 20);
 
-  bubble.addEventListener("click", () => {
-    bubble.style.opacity = "0";
-    setTimeout(() => {
-      bubble.remove();
-      clearInterval(interval);
-    }, 200);
-  });
-}
-setInterval(spawnBubble, 3000);
+    bubble.addEventListener("click", () => {
+        bubble.style.opacity = "0";
+        setTimeout(() => {
+            bubble.remove();
+            clearInterval(interval);
+        }, 200);
+    });
+};
+setInterval(spawnBubble, 3000); // ny boble hver 1 sekund
 
 /* Popup */
 const popup = document.getElementById("fiske-popup");
