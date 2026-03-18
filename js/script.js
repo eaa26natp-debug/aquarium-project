@@ -41,28 +41,9 @@ bubble.addEventListener("click", () => {
   }, 300);
 });
 
-/* Små bobler */
-function spawnBubble() {
-  const bubble = document.createElement("img");
-  bubble.src = "imag/bubble/bubble.png";
-  bubble.classList.add("bubble");
-
-  // start position (random vandret)
-  bubble.style.left = Math.random() * window.innerWidth + "px";
-  bubble.style.bottom = "0px";
-
-  document.body.appendChild(bubble);
-
-  // klik → pop
-  bubble.addEventListener("click", () => {
-    bubble.style.opacity = "0";
-    setTimeout(() => bubble.remove(), 200);
-  });
-}
-
 function spawnBubble() {
     const bubble = document.createElement("img");
-    bubble.src = "imges/bubble.png";
+    bubble.src = "imges/bubble/bubble.png";
     bubble.classList.add("bubble");
 
     let x = Math.random() * window.innerWidth;
@@ -93,33 +74,6 @@ function spawnBubble() {
 };
 setInterval(spawnBubble, 3000); // ny boble hver 1 sekund
 
-// let createbubble = document.createElement("img");
-// createbubble.classList.add("bubble")
-//     createbubble.src = "imges/bubble.png"
-//     document.body.appendChild(createbubble);
-//     setTimeout(() => {
-//     bubble.style.bottom = "0px";
-//     bubble.style.opacity = "1";
-// }, 300);
-
-// bubble.addEventListener("clik", () => {
-//     bubble.style.transform = "scale(1.3)";
-//     bubble.style.opacity = "0";
-//     console.log("test")
-
-//     setTimeout( () => {
-//         bubble.remove();
-//     }, 200);
-// });
-
-// let createbubble = document.createElement("img");
-// createbubble.classList.add("bubble")
-//     createbubble.src = "imges/bubble.png"
-//     document.body.appendChild(createbubble);
-//     setTimeout(() => {
-//     bubble.style.bottom = "0px";
-//     bubble.style.opacity = "1";
-// }, 300);
 
 /* Fiskedata og popup-funktionalitet */
 const fiskData = {
