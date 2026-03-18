@@ -101,6 +101,20 @@
 }
 
 
+/* Animation til alle koraller i baggrunden */
+@keyframes wiggle1 {
+  0% {
+    transform: skew(-2deg);
+  }
+  50% {
+    transform: skew(2deg);
+  }
+  100% {
+    transform: skew(-2deg);
+  }
+}
+
+
 /* Grøn koral placering og størrelse + animation*/
 .greenCoralGroup {
   position: absolute;
@@ -120,18 +134,6 @@
   width: 15vw;
   animation: wiggle1 4s ease infinite;
   transform-origin: bottom center;
-}
-
-@keyframes wiggle1 {
-  0% {
-    transform: rotate(-3deg);
-  }
-  50% {
-    transform: rotate(3deg);
-  }
-  100% {
-    transform: rotate(-3deg);
-  }
 }
 
 #greenCoral2 {
@@ -167,7 +169,7 @@
   width: 16vw;
   bottom: 0;
   left: 0vw;
-  animation: wiggle2 5s ease infinite;
+  animation: wiggle1 4s ease infinite;
   transform-origin: bottom center;
 }
 
@@ -175,21 +177,10 @@
   width: 14vw;
   bottom: 0;
   left: 8vw;
-  animation: wiggle2 5s ease infinite;
+  animation: wiggle1 5s ease infinite;
   transform-origin: bottom center;
 }
 
-@keyframes wiggle2 {
-  0% {
-    transform: skew(-2deg);
-  }
-  50% {
-    transform: skew(2deg);
-  }
-  100% {
-    transform: skew(-2deg);
-  }
-}
 
 /* Rød koral i baggrunden position og størrelse + animation */
 .coralRedGroup {
