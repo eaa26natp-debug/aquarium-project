@@ -206,3 +206,9 @@ document.body.addEventListener('click', (e) => {
     lukPopup();
   }
 }); 
+document.getElementById("backBtn").addEventListener("click", function() {
+    alert("Du klikkede på tilbage knappen!");
+});
+document.getElementById("backBtn").addEventListener("click", function() {
+    window.history.back(); 
+});
