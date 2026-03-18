@@ -149,7 +149,7 @@ const fiskData = {
 
 const popup = document.getElementById('fiske-popup');
 
-function åbnPopup(fiskId) {
+function openPopup(fiskId) {
   const fisk = fiskData[fiskId];
   if (!fisk) return;
 
@@ -160,49 +160,49 @@ function åbnPopup(fiskId) {
   popup.classList.add('popup-synlig');
 }
 
-function lukPopup() {
+function closePopup() {
   popup.classList.remove('popup-synlig');
 }
 
 // Klik på lyrehale åbner popup
 document.getElementById('fisk-lyrehale').addEventListener('click', (e) => {
   e.stopPropagation();
-  åbnPopup('lyrehale');
+  openPopup('lyrehale');
 });
 
 // Klik på gul kirurgfisk åbner popup
 document.getElementById('fisk-gul-kirugfisk').addEventListener('click', (e) => {
   e.stopPropagation();
-  åbnPopup('gulKirugfisk');
+  openPopup('gulKirugfisk');
 });
 
 // Klik på paletkirugfisk åbner popup
 document.getElementById('fisk-paletkirugfisk').addEventListener('click', (e) => {
   e.stopPropagation();
-  åbnPopup('paletKirugfisk');
+  openPopup('paletKirugfisk');
 });         
 
 // Klik på eeal åbner popup
 document.getElementById('fisk-eeal').addEventListener('click', (e) => {
   e.stopPropagation();
-  åbnPopup('eeal');
+  openPopup('eeal');
 });
 
 // klik på fiskegruppe åbner popup
 document.getElementById('fiske-gruppe').addEventListener('click', (e) => {
   e.stopPropagation();
-  åbnPopup('fiskeGruppe');
+  openPopup('fiskeGruppe');
 });
 
 // Klik på royal gramma åbner popup
 document.getElementById('fisk-royal-gramma').addEventListener('click', (e) => {
   e.stopPropagation();
-  åbnPopup('royalGramma');
+  openPopup('royalGramma');
 });
 
 // Klik udenfor boblen lukker den
 document.body.addEventListener('click', (e) => {
   if (!e.target.closest('#fiske-popup')) {
-    lukPopup();
+    closePopup();
   }
 }); 
