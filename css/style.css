@@ -29,7 +29,7 @@ body {
   }
 }
 
-#fiske-popup {
+.fiske-popup {
   position: fixed; /* fixed så den altid er midt på skærmen */
   top: 50%;
   left: 50%;

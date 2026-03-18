@@ -73,13 +73,6 @@ const popup = document.getElementById("fiske-popup");
 
 function openPopup(fiskId) {
   // Finder fisken i JSON ud fra id-feltet
-
-  console.log(fiskId);
-  console.log(fishList);
-  fishList.forEach((fish) => {
-    console.log(fish.name);
-  });
-
   const fisk = fishList.find((f) => f.id === fiskId);
   if (!fisk) {
     console.warn("Ingen fisk fundet med id:", fiskId);
