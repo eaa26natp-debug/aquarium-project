@@ -183,3 +183,13 @@ greenTang.addEventListener("click", () => {
     greenTang.classList.remove("biggerGreen");
   }, 8000);
 });
+
+//Forstørrelse af grøn tang vha klik
+const redCoral = document.getElementById("redCoral")
+
+redCoral.addEventListener("click", () => {
+  redCoral.classList.add("biggerRed");
+  setTimeout (function() {
+    redCoral.classList.remove("biggerRed");
+  }, 8000);
+});
