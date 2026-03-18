@@ -238,15 +238,23 @@ body {
   }
 }
 
-/* Bubble */
+/* Bubble
 #bubble1 {
   transition: opacity 0.3s;
   position: absolute;
   bottom: 0;
-  right: 50px;
+  right: 30px;
   width: 100px;
   cursor: pointer;
 }
+#bubble2 {
+  transition: opacity 0.3s;
+  position: absolute;
+  bottom: 0;
+  right: 130px;
+  width: 100px;
+  cursor: pointer;
+} */
 
 .bubble {
     position: absolute;
@@ -271,15 +279,3 @@ body {
   gap: 34px;
 }
 
-/* .bubble {
- animation: floatUp 5s linear infinite;
-}
-
-@keyframes floatUp {
-  from {
-    bottom: 0;
-  }
-  to {
-    bottom: 100vh;
-}
-} */
