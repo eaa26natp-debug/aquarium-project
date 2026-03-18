@@ -118,7 +118,7 @@
   bottom: 0vw;
   left: 4vw;
   width: 15vw;
-  animation: wiggle1 8s ease infinite;
+  animation: wiggle1 4s ease infinite;
   transform-origin: bottom center;
 }
 
@@ -138,12 +138,16 @@
   bottom: 1vw;
   left: 10vw;
   width: 12vw;
+  animation: wiggle1 5s ease infinite;
+  transform-origin: bottom center;
 }
 
 #greenCoral3 {
   bottom: 1vw;
   left: 6vw;
   width: 9vw;
+  animation: wiggle1 5s ease infinite;
+  transform-origin: bottom center;
 }
 
 /* Grøn tang i baggrunden position og størrelse */
