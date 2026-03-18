@@ -235,3 +235,11 @@
   bottom: 0.5vh;
   left: 67vw;
 }
+
+/* Placering og størrelse af Pink koral i baggrunden */
+.pinkCoral {
+  position: absolute;
+  width: 14vw;
+  bottom: 3vh;
+  left: 49vw;
+}
