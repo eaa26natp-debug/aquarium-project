@@ -101,7 +101,7 @@
 }
 
 
-/* Grøn koral placering og størrelse */
+/* Grøn koral placering og størrelse + animation*/
 .greenCoralGroup {
   position: absolute;
   bottom: 4vh;
@@ -118,6 +118,20 @@
   bottom: 0vw;
   left: 4vw;
   width: 15vw;
+  animation: wiggle1 8s ease infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes wiggle1 {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
 }
 
 #greenCoral2 {
