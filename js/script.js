@@ -87,6 +87,7 @@ function openPopup(fiskId) {
     console.log(fish.name);
   });
 
+  
   const fisk = fishList.find((f) => f.id === fiskId);
   if (!fisk) {
     console.warn("Ingen fisk fundet med id:", fiskId);
