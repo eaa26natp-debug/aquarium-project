@@ -5,7 +5,8 @@
 }
 
 body {
-  background-image: url("../imges/akvarie-baggrund-landskab.png");
+  /*background-image: url("../imges/akvarie-baggrund-landskab.png");*/
+  background-image: url("../imges/baggrund-uden-koral.png");
   background-attachment: fixed;
   background-size: cover;
   background-position: center bottom;
