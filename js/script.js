@@ -138,6 +138,11 @@ function closePopup() {
   popup.classList.add("popup-hidden");
 }
 
+function showSelection(name) {
+document.querySelectorAll(".popup-sektion").forEach((s) => {}); 
+document.getElementById("sektion-" + name).classList.add("aktiv");}
+
+
 // Alle fiske-id'er matcher JSON's "id"-felt
 const fiskIds = [
   "fisk-lyrehale",
