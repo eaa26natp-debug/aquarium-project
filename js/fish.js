@@ -25,6 +25,8 @@ function openPopup(fiskId) {
     return;
   }
 
+  thisFish = fisk;
+
   document.getElementById("popup-navn").textContent = fisk.name;
   document.getElementById("popup-latin").textContent = fisk["latinsk-name"];
   document.getElementById("popup-tekst").textContent = fisk["food-text"];
