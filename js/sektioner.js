@@ -52,4 +52,5 @@ function openHabitatPopup() {
   document.getElementById("habitat-popup").classList.add("popup-synlig")
   document.getElementById("habitat-popup").classList.remove("popup-hidden")
 };
+  
 
