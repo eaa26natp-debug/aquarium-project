@@ -39,6 +39,15 @@
           </button>
         </div>
       </div>
+      <button
+        class="back-btn"
+        onclick="
+          goBack(`info`);
+          event.stopPropagation();
+        "
+      >
+        <img src="imges/icons/info-icons/back-btn.svg" />
+      </button>
     </section>
 
     <section id="habitat-popup" class="fiske-popup popup-hidden">
@@ -54,8 +63,14 @@
         <img src="" id="habitat-img" alt="habitat globus" />
         <p id="habitat-text"></p>
       </div>
-      <button onclick="goBack(`habitat`); event.stopPropagation();">
-      <img src="imges/icons/info-icons/back-btn.svg">
+      <button
+        class="back-btn"
+        onclick="
+          goBack(`habitat`);
+          event.stopPropagation();
+        "
+      >
+        <img src="imges/icons/info-icons/back-btn.svg" />
       </button>
     </section>
 
@@ -78,10 +93,16 @@
           tempora ipsa animi? Sunt vitae, obcaecati, autem ab sint ex, fugiat
           recusandae libero dolor iusto nihil at ratione commodi vel.
         </p>
-        <button onclick="goBack(`food`); event.stopPropagation();">
-        <img src="imges/icons/info-icons/back-btn.svg">
-        </button>
       </div>
+      <button
+        class="back-btn"
+        onclick="
+          goBack(`food`);
+          event.stopPropagation();
+        "
+      >
+        <img src="imges/icons/info-icons/back-btn.svg" />
+      </button>
     </section>
 
     <section id="readmore-popup" class="fiske-popup popup-hidden">
@@ -106,11 +127,16 @@
           lang, selv om mange er mindre. Den kendes på sin blå krop og på den
           skarpe pig ved halen, som er typisk for kirurgfisk.
         </p>
-
-        <button onclick="goBack(`readmore`); event.stopPropagation();">
-        <img src="imges/icons/info-icons/back-btn.svg">
-        </button>
       </div>
+      <button
+        class="back-btn"
+        onclick="
+          goBack(`readmore`);
+          event.stopPropagation();
+        "
+      >
+        <img src="imges/icons/info-icons/back-btn.svg" />
+      </button>
 
       <div id="readmore-left">
         <img src="imges/section-background.png" alt="popup background" />
@@ -130,11 +156,6 @@
         </p>
       </div>
     </section>
-
-    <div id="sound-backbutton">
-      <img src="imges/icons/info-icons/back-btn.svg" />
-      <img src="imges/icons/info-icons/sound-btn.svg" alt="" />
-    </div>
 
     <div class="greenCoralGroup">
       <img

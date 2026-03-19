@@ -51,7 +51,7 @@ function openPopup(fiskId) {
   fisk.food.forEach((el, index) => {
     const foodContainer = document.createElement("div");
 
-    const foodHead = document.createElement("h6");
+    const foodHead = document.createElement("h4");
     foodHead.innerHTML = Object.keys(el);
 
     const foodImg = document.createElement("img");

@@ -22,12 +22,10 @@ h1 {
 }
 
 h2 {
-  /*  font-size: 5rem; */
-  font-size: 1.2rem;
+  font-size: 1.rem;
 }
 
 p {
-  /* font-size: 2rem; */
   font-size: 1rem;
 }
 
@@ -105,14 +103,10 @@ p {
   gap: 34px;
 }
 
-/* #readmore-popup {
-  position: relative;
-} */
-
 #readmore-left {
   position: absolute;
   top: 35%;
-  right: 60%;
+  left: -10%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -131,24 +125,19 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  
 }
 
 #readmore-left img,
 #readmore-right img {
   width: 300px;
-  
 }
 
-
-
-
-#sound-backbutton{
+.back-btn {
+  background: none;
+  border: none;
+  
   position: absolute;
-  bottom: 0%;
-  width: 100%;
-  display: none;
-  justify-content: space-between;
+  bottom: 0;
+  left: 0;
   z-index: 100;
 }
