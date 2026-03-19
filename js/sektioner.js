@@ -13,6 +13,9 @@ goBackList.forEach((goBackBtn) => {
 /* Info redirect to food popup */
 
 function showSection(popup) {
+
+document.getElementById("sound-backbutton").classList.toggle("sound-backbutton")
+
   if (popup == "food") {
     document.getElementById("fiske-popup").classList.toggle("popup-synlig");
     document.getElementById("food-popup").classList.toggle("popup-synlig");
@@ -48,3 +51,4 @@ function openHabitatPopup() {
   document.getElementById("habitat-popup").classList.add("popup-synlig")
   document.getElementById("habitat-popup").classList.remove("popup-hidden")
 };
+
