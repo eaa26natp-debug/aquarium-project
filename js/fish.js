@@ -27,14 +27,13 @@ function openPopup(fiskId) {
 
   thisFish = fisk;
 
-  console.log(fisk.name);
-
   /* Fisk info */
   document.getElementById("popup-navn").textContent = fisk.name;
   document.getElementById("popup-latin").textContent = fisk["latinskName"];
   document.getElementById("popup-tekst").textContent = fisk["foodText"];
 
   /* Fisk food */
+
   const foodPopup = document.getElementById("food-popup");
 
   foodPopup.querySelector("h2").innerHTML = fisk.name;
@@ -42,7 +41,13 @@ function openPopup(fiskId) {
   foodPopup.querySelectorAll("p")[1].innerHTML = fisk.foodText;
 
   const foodList = document.getElementsByClassName("foods")[0];
-  
+
+  if (foodList.children.length > 0) {
+    while (foodList.firstChild) {
+      foodList.removeChild(foodList.firstChild);
+    }
+  }
+
   /* Creates food elements */
   fisk.food.forEach((el, index) => {
     const foodContainer = document.createElement("div");
@@ -58,6 +63,13 @@ function openPopup(fiskId) {
 
     foodList.appendChild(foodContainer);
   });
+
+  /* Makes sure another popup can't show while inside another ones active */
+  if (document.getElementsByClassName("popup-synlig").length == 1) {
+    document
+      .getElementsByClassName("popup-synlig")[0]
+      .classList.toggle("popup-synlig");
+  }
 
   /* open info popup */
   popup.classList.remove("popup-hidden");
