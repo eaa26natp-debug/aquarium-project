@@ -55,7 +55,7 @@ function openPopup(fiskId) {
     foodHead.innerHTML = Object.keys(el);
 
     const foodImg = document.createElement("img");
-    foodImg.src = `../imges/icons/food-icons/${Object.values(fisk.food[index])[0]}`;
+    foodImg.src = `imges/icons/food-icons/${Object.values(fisk.food[index])[0]}`;
 
     foodContainer.appendChild(foodHead);
     foodContainer.appendChild(foodImg);

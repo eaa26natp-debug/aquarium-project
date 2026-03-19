@@ -1,8 +1,6 @@
 "use strict";
 
-function goBack(from) {
-  console.log(`i am from: ${from}`);
-  
+function goBack(from) {  
   if (from == "habitat") {
     document.getElementById("habitat-popup").classList.remove("popup-synlig");
   }
@@ -19,7 +17,6 @@ function goBack(from) {
     document.getElementById("fiske-popup").classList.remove("popup-hidden");
     document.getElementById("fiske-popup").classList.add("popup-synlig");
   }
-
 }
 
 /* Info redirect to food popup */
