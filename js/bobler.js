@@ -5,7 +5,6 @@ audio.play();
 
 const bubble = document.getElementById("bubble");
 const sound = new Audio("sound/bubble-pop.mp3");
-console.log(bubble);
 
 /* Små bobler */
 function spawnBubble() {
