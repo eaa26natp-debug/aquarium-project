@@ -23,4 +23,9 @@ function showSection(popup) {
     document.getElementById("fiske-popup").classList.toggle("popup-synlig")
     
   }
+  if (popup == "habitat") {
+
+    document.getElementById("fiske-popup").classList.toggle("popup-synlig")
+    document.getElementById("habitat-popup").classList.toggle("popup-synlig")
+  }
 }
