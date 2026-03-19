@@ -1,6 +1,6 @@
 "use strict";
 
-/* Fetches the fishes data from .json file */
+/* Henter fiske-info fra JSON filen*/
 let fishList = [];
 function GetFishData() {
   fetch("fish-list.json")
@@ -14,7 +14,7 @@ function GetFishData() {
 }
 GetFishData();
 
-/* Popup */
+/* Popup kommer frem */
 const popup = document.getElementById("fiske-popup");
 
 function openPopup(fiskId) {
@@ -40,7 +40,7 @@ function closePopup() {
   popup.classList.add("popup-hidden");
 }
 
-// Alle fiske-id'er matcher JSON's "id"-felt
+// Fiskenes ID matcher dem, i JSON filen
 const fiskIds = [
   "fisk-lyrehale",
   "fisk-gul-kirugfisk",
