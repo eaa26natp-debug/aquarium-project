@@ -17,4 +17,9 @@ function showSection(popup) {
     document.getElementById("fiske-popup").classList.toggle("popup-synlig");
     document.getElementById("food-popup").classList.toggle("popup-synlig");
   } 
+  if (popup == "readMore") {
+    console.log("click button readMore");
+    
+    
+  }
 }
