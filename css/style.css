@@ -140,17 +140,16 @@ p {
 
 
 
-#backbtn{
-position: absolute;
-bottom: 20%;
-left: 50%;
 
-}
 
-#sound-btn{
+#sound-backbutton{
 
-position: absolute;
-bottom: 20%;
-left: 80%;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+
 
 }
