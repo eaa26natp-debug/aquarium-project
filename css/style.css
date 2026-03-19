@@ -137,3 +137,20 @@ p {
 #readmore-right img {
   width: 300px;
 }
+
+
+
+#backbtn{
+position: absolute;
+bottom: 20%;
+left: 50%;
+
+}
+
+#sound-btn{
+
+position: absolute;
+bottom: 20%;
+left: 80%;
+
+}
