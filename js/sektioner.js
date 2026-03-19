@@ -43,6 +43,7 @@ function openHabitatPopup() {
 
   document.getElementById("habitat-navn").textContent = thisFish.name;
   document.getElementById("habitat-latin").textContent = thisFish["latinsk-name"];
+  document.getElementById("habitat-img").src = "imges/habitat-globus/" + thisFish["habitat-img"];
   document.getElementById("habitat-text").textContent = thisFish["habitat-text"];
 
   document.getElementById("fiske-popup").classList.remove("popup-synlig")
