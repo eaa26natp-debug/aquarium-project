@@ -24,8 +24,27 @@ function showSection(popup) {
     
   }
   if (popup == "habitat") {
-
-    document.getElementById("fiske-popup").classList.toggle("popup-synlig")
+    openHabitatPopup();
+    }
+  /*   document.getElementById("fiske-popup").classList.toggle("popup-synlig")
     document.getElementById("habitat-popup").classList.toggle("popup-synlig")
-  }
-}
+  } */
+};
+
+
+//Åben habitat popup til den korrekte fisk
+let thisFish = null;
+
+function openHabitatPopup() {
+  if (!thisFish) return;
+
+  document.getElementById("habitat-navn").textContent = thisFish.name;
+  document.getElementById("habitat-latin").textContent = thisFish["latinsk-name"];
+  document.getElementById("habitat-text").textContent = thisFish["habitat-text"];
+
+  document.getElementById("fiske-popup").classList.remove("popup-synlig")
+  document.getElementById("fiske-popup").classList.add("popup-hidden")
+
+  document.getElementById("habitat-popup").classList.add("popup-synlig")
+  document.getElementById("habitat-popup").classList.remove("popup-hidden")
+};
