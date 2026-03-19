@@ -39,7 +39,6 @@
           </button>
         </div>
       </div>
-      <button class="go-back">tilbage</button>
     </section>
 
     <section id="habitat-popup" class="fiske-popup popup-hidden">
@@ -55,9 +54,9 @@
         <img src="" id="habitat-img" alt="habitat globus" />
         <p id="habitat-text"></p>
       </div>
-      <button class="go-back">
-  <img src="imges/icons/info-icons/back-btn.svg">
-</button>
+      <button onclick="goBack(`habitat`); event.stopPropagation();">
+      <img src="imges/icons/info-icons/back-btn.svg">
+      </button>
     </section>
 
     <!-- Food popup for fish -->
@@ -79,7 +78,9 @@
           tempora ipsa animi? Sunt vitae, obcaecati, autem ab sint ex, fugiat
           recusandae libero dolor iusto nihil at ratione commodi vel.
         </p>
-        <button class="go-back">tilbage</button>
+        <button onclick="goBack(`food`); event.stopPropagation();">
+        <img src="imges/icons/info-icons/back-btn.svg">
+        </button>
       </div>
     </section>
 
@@ -106,7 +107,9 @@
           skarpe pig ved halen, som er typisk for kirurgfisk.
         </p>
 
-        <button class="go-back">tilbage</button>
+        <button onclick="goBack(`readmore`); event.stopPropagation();">
+        <img src="imges/icons/info-icons/back-btn.svg">
+        </button>
       </div>
 
       <div id="readmore-left">
