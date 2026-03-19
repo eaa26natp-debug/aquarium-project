@@ -11,9 +11,10 @@ goBackList.forEach((goBackBtn) => {
 });
 
 /* Info redirect to food popup */
-const foodBtn = document.getElementById("food-btn");
 
-foodBtn.addEventListener("click", () => {
-  document.getElementById("fiske-popup").classList.toggle("popup-synlig");
-  document.getElementById("food-popup").classList.toggle("popup-synlig");
-});
+function showSection(popup) {
+  if (popup == "food") {
+    document.getElementById("fiske-popup").classList.toggle("popup-synlig");
+    document.getElementById("food-popup").classList.toggle("popup-synlig");
+  } 
+}

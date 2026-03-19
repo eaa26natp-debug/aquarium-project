@@ -15,7 +15,7 @@
   <body>
     <audio id="bg-sound" src="sound/water-noises.mp3" loop></audio>
 
-    <div id="fiske-popup" class="fiske-popup popup-hidden">
+    <section id="fiske-popup" class="fiske-popup popup-hidden">
       <img
         src="imges/section-background.png"
         alt="popup background"
@@ -31,16 +31,39 @@
           <button class="popup-knap" onclick="showSection('habitat')">
             <img src="imges/icons/info-icons/global-icon.svg" alt="habitat" />
           </button>
-          <button class="popup-knap" onclick="showSection('laes-mere')">
+          <button class="popup-knap" onclick="showSection('readMore')">
             <img src="imges/icons/info-icons/info-icon.svg" alt="læs mere" />
           </button>
-          <button class="popup-knap" onclick="showSection('mad')">
+          <button class="popup-knap" onclick="showSection('food')">
             <img src="imges/icons/info-icons/food-icon.svg" alt="mad" />
           </button>
         </div>
       </div>
       <button class="go-back">tilbage</button>
-    </div>
+    </section>
+
+    <!-- Food popup for fish -->
+    <section id="food-popup" class="fiske-popup popup-hidden">
+      <img
+        src="imges/section-background.png"
+        alt="popup background"
+        class="popup-boble"
+      />
+      <div class="popup-indhold">
+        <h2>Animal</h2>
+        <div class="foods">
+          <p>food1</p>
+          <p>food1</p>
+          <p>food1</p>
+        </div>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut eius
+          tempora ipsa animi? Sunt vitae, obcaecati, autem ab sint ex, fugiat
+          recusandae libero dolor iusto nihil at ratione commodi vel.
+        </p>
+        <button class="go-back">tilbage</button>
+      </div>
+    </section>
 
     <div class="greenCoralGroup">
       <img src="imges/decorations/green-coral-1.png" alt="Grøn koral 1" class="greenCoral" id="greenCoral1">
@@ -148,15 +171,6 @@
     />
     <img src="imges/decorations/red-coral.png" alt="Rød koral" id="redCoral" />
 
-    <img id="bubble1" src="imges/bubble/bubble.png" alt="bobble" />
-    <img src="imges/bubble/bobbel-lil2.png" alt="lille bobble" />
-
-    <img
-      id="backBtn"
-      src="imges/bobbel-lil2.png"
-      alt="back"
-      style="cursor: pointer"
-    />
 
     <script src="js/fish.js"></script>
     <script src="js/sektioner.js"></script>
