@@ -27,13 +27,12 @@ function openPopup(fiskId) {
 
   thisFish = fisk;
 
-  /* Fisk info */
+  /* Fisk info data insert*/
   document.getElementById("popup-navn").textContent = fisk.name;
   document.getElementById("popup-latin").textContent = fisk["latinskName"];
   document.getElementById("popup-tekst").textContent = fisk["foodText"];
 
-  /* Fisk food */
-
+  /* Fisk food data insert*/
   const foodPopup = document.getElementById("food-popup");
 
   foodPopup.querySelector("h2").innerHTML = fisk.name;
@@ -63,6 +62,18 @@ function openPopup(fiskId) {
 
     foodList.appendChild(foodContainer);
   });
+
+  /* Readmore data insert */
+  const readMorePopup = document.getElementById("readmore-popup");
+
+  readMorePopup.querySelector("h2").innerHTML = fisk.name;
+  readMorePopup.querySelectorAll("p")[0].innerHTML = fisk.latinskName;
+  readMorePopup.querySelectorAll("p")[1].innerHTML = fisk.readMoreOne;
+
+  document.getElementById("readmore-left").querySelector("p").innerHTML =
+    fisk.readMoreTwo;
+  document.getElementById("readmore-right").querySelector("p").innerHTML =
+    fisk.readMoreThree;
 
   /* Makes sure another popup can't show while inside another ones active */
   if (document.getElementsByClassName("popup-synlig").length == 1) {
