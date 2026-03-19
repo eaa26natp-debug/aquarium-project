@@ -2,153 +2,153 @@
   {
     "id": "fisk-lyrehale",
     "name": "Lyrehale Anthias",
-    "latinsk-name": "(Pseudanthias squamipinnis)",
+    "latinskName": "(Pseudanthias squamipinnis)",
     "race": "Revfisk",
 
     "habitat": "Lever ved koralrev i tropiske havområder",
-    "habitat-text": "Jeg bor ved koralrev i varme havområder, hvor der er masser af liv omkring mig. Jeg svømmer ofte sammen med andre fisk over revet, men holder mig tæt på gode gemmesteder. Så kan jeg hurtigt smutte væk, hvis jeg bliver bange.",
+    "habitatText": "Jeg bor ved koralrev i varme havområder, hvor der er masser af liv omkring mig. Jeg svømmer ofte sammen med andre fisk over revet, men holder mig tæt på gode gemmesteder. Så kan jeg hurtigt smutte væk, hvis jeg bliver bange.",
 
     "food": [
       { "Plankton": "planktons-icon.svg" },
       { "Små dyr": "small-fish-icon.svg" },
       { "Krebsdyr": "crap-icon.svg" }
     ],
-    "food-info": "Spiser plankton, små dyr og små krebsdyr",
-    "food-text": "Jeg er en lille fisk, som godt kan lide at spise bitte små dyr, der svæver rundt i vandet. Jeg fanger min mad ude i vandet nær revet, hvor jeg bor. Nogle gange snupper jeg små krebsdyr og plankton, som driver forbi mig.",
+    "foodInfo": "Spiser plankton, små dyr og små krebsdyr",
+    "foodText": "Jeg er en lille fisk, som godt kan lide at spise bitte små dyr, der svæver rundt i vandet. Jeg fanger min mad ude i vandet nær revet, hvor jeg bor. Nogle gange snupper jeg små krebsdyr og plankton, som driver forbi mig.",
 
     "size": "Ca. 7–15 cm",
     "special": "Kan skifte køn, hvis gruppens han forsvinder",
 
-    "read-more-1": "Den lever ofte i stimer med mange hunner og få hanner. Hvis hannen i gruppen forsvinder, kan den største hun ændre sig og blive til en han. Det gør arten helt særlig og viser, hvor fascinerende livet under havets overflade kan være. Lyretail anthias er vigtig for koralrevets økosystem, fordi den indgår i fødekæden og er med til at holde revet sundt og aktivt. Samtidig er den en af de fisk, mange lægger mærke til først, fordi den er så farverig og elegant at se på.",
-    "read-more-2": "Lyretail anthias er en lille og farverig revfisk, som ofte ses svømme i grupper over koralrevet. Den er kendt for sine varme orange og rosa farver samt sin flotte, kløftede hale.",
-    "read-more-3": "Fisken bruger en stor del af dagen på at fange plankton i det frie vand. En af de mest spændende ting ved lyretail anthias er dens sociale liv. "
+    "readMoreOne": "Den lever ofte i stimer med mange hunner og få hanner. Hvis hannen i gruppen forsvinder, kan den største hun ændre sig og blive til en han. Det gør arten helt særlig og viser, hvor fascinerende livet under havets overflade kan være. Lyretail anthias er vigtig for koralrevets økosystem, fordi den indgår i fødekæden og er med til at holde revet sundt og aktivt. Samtidig er den en af de fisk, mange lægger mærke til først, fordi den er så farverig og elegant at se på.",
+    "readMoreTwo": "Lyretail anthias er en lille og farverig revfisk, som ofte ses svømme i grupper over koralrevet. Den er kendt for sine varme orange og rosa farver samt sin flotte, kløftede hale.",
+    "readMoreThree": "Fisken bruger en stor del af dagen på at fange plankton i det frie vand. En af de mest spændende ting ved lyretail anthias er dens sociale liv. "
   },
   {
     "id": "fisk-eeal",
     "name": "Europæisk Ål",
-    "latinsk-name": "(Anguilla anguilla)",
+    "latinskName": "(Anguilla anguilla)",
     "race": "Katadrom vandrefisk",
 
     "habitat": "Lever i åer, søer, fjorde og kystområder",
-    "habitat-text": "Jeg lever i åer, søer, fjorde og ved kyster. Jeg kan godt lide steder med planter, mudder og gode gemmesteder, hvor jeg kan skjule mig og føle mig tryg.",
+    "habitatText": "Jeg lever i åer, søer, fjorde og ved kyster. Jeg kan godt lide steder med planter, mudder og gode gemmesteder, hvor jeg kan skjule mig og føle mig tryg.",
 
     "food": [
       { "Insektlarver": "worm-icon.svg" },
       { "Små fisk": "small-fish-icon.svg" },
       { "Krebsdyr": "crap-icon.svg" }
     ],
-    "food-info": "Spiser småfisk, krebsdyr, orme og insektlarver",
-    "food-text": "Jeg spiser små fisk, larver, krebsdyr og andre smådyr, som jeg finder i vandet. Jeg leder ofte efter mad nede ved bunden, hvor der gemmer sig mange spændende ting at spise.",
+    "foodInfo": "Spiser småfisk, krebsdyr, orme og insektlarver",
+    "foodText": "Jeg spiser små fisk, larver, krebsdyr og andre smådyr, som jeg finder i vandet. Jeg leder ofte efter mad nede ved bunden, hvor der gemmer sig mange spændende ting at spise.",
 
     "size": "Kan blive over 1 meter lang",
     "special": "Vandrer helt til Sargassohavet for at gyde",
 
-    "read-more-1": "Europæisk ål, Anguilla anguilla, er en særlig fiskeart med en usædvanlig livscyklus. Den klækkes i Sargassohavet i Atlanterhavet, driver mod Europa som larve og vokser op i ferskvand eller kystområder. Når den bliver voksen, vandrer den tilbage til Sargassohavet for at gyde. Derfor kaldes den en vandrefisk. Europæisk ål er i dag kritisk truet. Bestanden er faldet meget på grund af blandt andet overfiskeri, spærringer i vandløb og tab af levesteder. Derfor arbejder mange på at beskytte den.",
+    "readMoreOne": "Europæisk ål, Anguilla anguilla, er en særlig fiskeart med en usædvanlig livscyklus. Den klækkes i Sargassohavet i Atlanterhavet, driver mod Europa som larve og vokser op i ferskvand eller kystområder. Når den bliver voksen, vandrer den tilbage til Sargassohavet for at gyde. Derfor kaldes den en vandrefisk. Europæisk ål er i dag kritisk truet. Bestanden er faldet meget på grund af blandt andet overfiskeri, spærringer i vandløb og tab af levesteder. Derfor arbejder mange på at beskytte den.",
 
-    "read-more-2": "Arten findes i mange forskellige levesteder, blandt andet åer, søer, fjorde, brakvand og kystområder. Den lever ofte nær bunden og søger gerne skjul mellem planter, sten, mudder og rødder. ",
+    "readMoreTwo": "Arten findes i mange forskellige levesteder, blandt andet åer, søer, fjorde, brakvand og kystområder. Den lever ofte nær bunden og søger gerne skjul mellem planter, sten, mudder og rødder. ",
 
-    "read-more-3": "Europæisk ål er et rovdyr, som spiser små fisk, insektlarver, krebsdyr og andre smådyr, alt efter hvor den lever, og hvor stor den er."
+    "readMoreThree": "Europæisk ål er et rovdyr, som spiser små fisk, insektlarver, krebsdyr og andre smådyr, alt efter hvor den lever, og hvor stor den er."
   },
   {
     "id": "fisk-royal-gramma",
     "name": "Royal gramma",
-    "latinsk-name": "(Gramma loreto)",
+    "latinskName": "(Gramma loreto)",
     "race": "Revfisk",
 
     "habitat": "Lever ved koralrev, klipper og huler i Caribien",
-    "habitat-text": "Jeg bor i det varme hav ved koralrev og klipper. Jeg elsker små huler, sprækker og gemmesteder, hvor jeg hurtigt kan smutte ind, hvis jeg bliver forskrækket. Jeg kan godt lide at være tæt på mit skjul, så jeg føler mig tryg.",
+    "habitatText": "Jeg bor i det varme hav ved koralrev og klipper. Jeg elsker små huler, sprækker og gemmesteder, hvor jeg hurtigt kan smutte ind, hvis jeg bliver forskrækket. Jeg kan godt lide at være tæt på mit skjul, så jeg føler mig tryg.",
 
     "food": [
       { "Plankton": "planktons-icon.svg" },
       { "Små krebsdyr": "crap-icon.svg" }
     ],
-    "food-info": "Spiser plankton og små krebsdyr",
-    "food-text": "Jeg elsker små mundfulde! Jeg er en lille fisk, som godt kan lide at spise bitte små dyr, der svæver rundt i vandet. Jeg fanger min mad tæt ved revet, hvor jeg bor. Nogle gange napper jeg små krebsdyr og plankton, som driver forbi mig.",
+    "foodInfo": "Spiser plankton og små krebsdyr",
+    "foodText": "Jeg elsker små mundfulde! Jeg er en lille fisk, som godt kan lide at spise bitte små dyr, der svæver rundt i vandet. Jeg fanger min mad tæt ved revet, hvor jeg bor. Nogle gange napper jeg små krebsdyr og plankton, som driver forbi mig.",
 
     "size": "Ca. 8 cm",
     "special": "Har lilla og gul krop og gemmer sig gerne i sprækker",
 
-    "read-more-1": "Royal gramma, Gramma loreto, er en lille tropisk saltvandsfisk, som hører hjemme ved koralrev i Caribien og andre dele af det vestlige Atlanterhav. Den er let at kende på sin markante farvetegning, hvor forreste del af kroppen er violet-lilla, mens bagkroppen er gul. Arten lever tæt på rev, klippevægge, sprækker og små huler, hvor den hurtigt kan søge ind i sikkerhed. Royal gramma bliver normalt omkring 8 cm lang og er en lille revfisk. Dens stærke farver og rolige bevægelser gør den til en spændende del af livet på koralrevet.",
+    "readMoreOne": "Royal gramma, Gramma loreto, er en lille tropisk saltvandsfisk, som hører hjemme ved koralrev i Caribien og andre dele af det vestlige Atlanterhav. Den er let at kende på sin markante farvetegning, hvor forreste del af kroppen er violet-lilla, mens bagkroppen er gul. Arten lever tæt på rev, klippevægge, sprækker og små huler, hvor den hurtigt kan søge ind i sikkerhed. Royal gramma bliver normalt omkring 8 cm lang og er en lille revfisk. Dens stærke farver og rolige bevægelser gør den til en spændende del af livet på koralrevet.",
 
-    "read-more-2": "I naturen lever royal gramma hovedsageligt af zooplankton og små krebsdyr. Den opholder sig ofte nær sit skjulested og fanger små fødeemner, som driver forbi i vandet.",
+    "readMoreTwo": "I naturen lever royal gramma hovedsageligt af zooplankton og små krebsdyr. Den opholder sig ofte nær sit skjulested og fanger små fødeemner, som driver forbi i vandet.",
 
-    "read-more-3": "Arten er generelt fredelig, men den kan være territorial over for andre fisk, der kommer for tæt på dens gemmested."
+    "readMoreThree": "Arten er generelt fredelig, men den kan være territorial over for andre fisk, der kommer for tæt på dens gemmested."
   },
   {
     "id": "fisk-gul-kirugfisk",
     "name": "Gul kirurgfisk",
-    "latinsk-name": "(Zebrasoma flavescens)",
+    "latinskName": "(Zebrasoma flavescens)",
     "race": "Revfisk",
 
     "habitat": "Lever ved tropiske koralrev i Stillehavet",
-    "habitat-text": "Jeg lever ved tropiske koralrev i Stillehavet, især omkring Hawaii, hvor der er klipper, koraller og masser af alger. Her svømmer jeg rundt og finder både mad og gode steder at gemme mig.",
+    "habitatText": "Jeg lever ved tropiske koralrev i Stillehavet, især omkring Hawaii, hvor der er klipper, koraller og masser af alger. Her svømmer jeg rundt og finder både mad og gode steder at gemme mig.",
 
     "food": [
       { "Alger": "algae-icon.svg" },
       { "Koreller": "coral-icon.svg" }
     ],
-    "food-info": "Spiser mest alger og andet plantemateriale",
-    "food-text": "Jeg spiser mest alger, som jeg nipper af sten og koraller med min lille mund. På den måde hjælper jeg også med at holde revet rent og sundt.",
+    "foodInfo": "Spiser mest alger og andet plantemateriale",
+    "foodText": "Jeg spiser mest alger, som jeg nipper af sten og koraller med min lille mund. På den måde hjælper jeg også med at holde revet rent og sundt.",
 
     "size": "Ca. 20 cm",
     "special": "Har en skarp pig ved halen til forsvar",
 
-    "read-more-1": "Gul kirurgfisk, Zebrasoma flavescens, er en kendt revfisk med en stærk gul farve og en flad, oval krop. Den lever især i Stillehavet omkring tropiske koralrev, hvor den svømmer mellem koraller, klipper og algevækst. Her bruger den sin lille snude til at græsse alger af sten og koraller. Som andre kirurgfisk har den en skarp pig ved haleroden, som den kan bruge til forsvar. Det er netop derfor, den kaldes en kirurgfisk. Den er både smuk, nyttig og spændende at opleve på et koralrev eller i et akvarium.",
+    "readMoreOne": "Gul kirurgfisk, Zebrasoma flavescens, er en kendt revfisk med en stærk gul farve og en flad, oval krop. Den lever især i Stillehavet omkring tropiske koralrev, hvor den svømmer mellem koraller, klipper og algevækst. Her bruger den sin lille snude til at græsse alger af sten og koraller. Som andre kirurgfisk har den en skarp pig ved haleroden, som den kan bruge til forsvar. Det er netop derfor, den kaldes en kirurgfisk. Den er både smuk, nyttig og spændende at opleve på et koralrev eller i et akvarium.",
 
-    "read-more-2": "Arten er vigtig for livet på revet, fordi den spiser alger, som ellers kan fylde for meget og skade korallerne. Gul kirurgfisk hjælper derfor med at holde koralrevet i balance. ",
+    "readMoreTwo": "Arten er vigtig for livet på revet, fordi den spiser alger, som ellers kan fylde for meget og skade korallerne. Gul kirurgfisk hjælper derfor med at holde koralrevet i balance. ",
 
-    "read-more-3": "Den lever alene eller i mindre grupper og kan være territorial over for andre fisk."
+    "readMoreThree": "Den lever alene eller i mindre grupper og kan være territorial over for andre fisk."
   },
   {
     
     "id": "fisk-paletkirugfisk",
     "name": "Paletkirurgfisk",
-    "latinsk-name": "(Acanthurus Coeruleus)",
+    "latinskName": "(Acanthurus Coeruleus)",
     "race": "Revfisk",
 
     "habitat": "Lever ved koralrev, klipper og havgræs i Atlanterhavet",
-    "habitat-text": "Jeg bor ved koralrev, klipper og nogle gange ved havgræs i det varme hav. Du kan finde mig i Caribien, ved Bahamas, Florida og andre steder i det vestlige Atlanterhav. Her finder jeg masser af mad og gode steder at gemme mig mellem rev og sten.",
+    "habitatText": "Jeg bor ved koralrev, klipper og nogle gange ved havgræs i det varme hav. Du kan finde mig i Caribien, ved Bahamas, Florida og andre steder i det vestlige Atlanterhav. Her finder jeg masser af mad og gode steder at gemme mig mellem rev og sten.",
 
     "food": [
       { "Alger": "algae-icon.svg" },
       { "Koreller": "coral-icon.svg" }
     ],
-    "food-info": "Spiser mest alger og andet plantemateriale",
-    "food-text": "Jeg spiser mest alger, som jeg finder på sten, klipper og koraller. Nogle gange får jeg også lidt plankton med, når jeg svømmer rundt og leder efter mad.",
+    "foodInfo": "Spiser mest alger og andet plantemateriale",
+    "foodText": "Jeg spiser mest alger, som jeg finder på sten, klipper og koraller. Nogle gange får jeg også lidt plankton med, når jeg svømmer rundt og leder efter mad.",
 
     "size": "Ca. 20–39 cm",
     "special": "Har en skarp pig ved halen og hjælper med at holde revet fri for alger",
 
-    "read-more-1": "Blå kirurgfisk, Acanthurus coeruleus, er en tropisk revfisk, som lever i det vestlige Atlanterhav. Den findes blandt andet i Caribien, ved Florida og Bahamas, hvor den holder til ved koralrev, klipper og områder med havgræs. Her finder den både føde og gode skjulesteder, og den svømmer ofte rundt tæt ved revet, hvor der er masser af liv og steder at gemme sig. Blå kirurgfisk kan blive op til omkring 39 cm lang, selv om mange er mindre. Den kendes på sin blå krop og på den skarpe pig ved halen, som er typisk for kirurgfisk.",
+    "readMoreOne": "Blå kirurgfisk, Acanthurus coeruleus, er en tropisk revfisk, som lever i det vestlige Atlanterhav. Den findes blandt andet i Caribien, ved Florida og Bahamas, hvor den holder til ved koralrev, klipper og områder med havgræs. Her finder den både føde og gode skjulesteder, og den svømmer ofte rundt tæt ved revet, hvor der er masser af liv og steder at gemme sig. Blå kirurgfisk kan blive op til omkring 39 cm lang, selv om mange er mindre. Den kendes på sin blå krop og på den skarpe pig ved halen, som er typisk for kirurgfisk.",
 
-    "read-more-2": "Arten spiser mest alger, som den græsser af sten, koraller og andre overflader på revet. Sådan hjælper den med at holde revet sundt og i balance, så alger ikke fylder for meget.",
+    "readMoreTwo": "Arten spiser mest alger, som den græsser af sten, koraller og andre overflader på revet. Sådan hjælper den med at holde revet sundt og i balance, så alger ikke fylder for meget.",
 
-    "read-more-3": "Piggene ved halen kan bruges til forsvar, hvis fisken føler sig truet. Det gør blå kirurgfisk til en både flot og vigtig del af livet på koralrevet."
+    "readMoreThree": "Piggene ved halen kan bruges til forsvar, hvis fisken føler sig truet. Det gør blå kirurgfisk til en både flot og vigtig del af livet på koralrevet."
   },
   {
     
     "id": "fiske-gruppe",
     "name": "Kirugfisk",
-    "latinsk-name": "(Acanthurus Coeruleus)",
+    "latinskName": "(Acanthurus Coeruleus)",
     "race": "Revfisk",
 
     "habitat": "Lever ved koralrev, klipper og havgræs i Atlanterhavet",
-    "habitat-text": "Jeg bor ved koralrev, klipper og nogle gange ved havgræs i det varme hav. Du kan finde mig i Caribien, ved Bahamas, Florida og andre steder i det vestlige Atlanterhav. Her finder jeg masser af mad og gode steder at gemme mig mellem rev og sten.",
+    "habitatText": "Jeg bor ved koralrev, klipper og nogle gange ved havgræs i det varme hav. Du kan finde mig i Caribien, ved Bahamas, Florida og andre steder i det vestlige Atlanterhav. Her finder jeg masser af mad og gode steder at gemme mig mellem rev og sten.",
 
     "food": [
       { "Alger": "algae-icon.svg" },
       { "Koreller": "coral-icon.svg" }
     ],
-    "food-info": "Spiser mest alger og andet plantemateriale",
-    "food-text": "Jeg spiser mest alger, som jeg finder på sten, klipper og koraller. Nogle gange får jeg også lidt plankton med, når jeg svømmer rundt og leder efter mad.",
+    "foodInfo": "Spiser mest alger og andet plantemateriale",
+    "foodText": "Jeg spiser mest alger, som jeg finder på sten, klipper og koraller. Nogle gange får jeg også lidt plankton med, når jeg svømmer rundt og leder efter mad.",
 
     "size": "Ca. 20–39 cm",
     "special": "Har en skarp pig ved halen og hjælper med at holde revet fri for alger",
 
-    "read-more-1": "Blå kirurgfisk, Acanthurus coeruleus, er en tropisk revfisk, som lever i det vestlige Atlanterhav. Den findes blandt andet i Caribien, ved Florida og Bahamas, hvor den holder til ved koralrev, klipper og områder med havgræs. Her finder den både føde og gode skjulesteder, og den svømmer ofte rundt tæt ved revet, hvor der er masser af liv og steder at gemme sig. Blå kirurgfisk kan blive op til omkring 39 cm lang, selv om mange er mindre. Den kendes på sin blå krop og på den skarpe pig ved halen, som er typisk for kirurgfisk.",
+    "readMoreOne": "Blå kirurgfisk, Acanthurus coeruleus, er en tropisk revfisk, som lever i det vestlige Atlanterhav. Den findes blandt andet i Caribien, ved Florida og Bahamas, hvor den holder til ved koralrev, klipper og områder med havgræs. Her finder den både føde og gode skjulesteder, og den svømmer ofte rundt tæt ved revet, hvor der er masser af liv og steder at gemme sig. Blå kirurgfisk kan blive op til omkring 39 cm lang, selv om mange er mindre. Den kendes på sin blå krop og på den skarpe pig ved halen, som er typisk for kirurgfisk.",
 
-    "read-more-2": "Arten spiser mest alger, som den græsser af sten, koraller og andre overflader på revet. Sådan hjælper den med at holde revet sundt og i balance, så alger ikke fylder for meget.",
+    "readMoreTwo": "Arten spiser mest alger, som den græsser af sten, koraller og andre overflader på revet. Sådan hjælper den med at holde revet sundt og i balance, så alger ikke fylder for meget.",
 
-    "read-more-3": "Piggene ved halen kan bruges til forsvar, hvis fisken føler sig truet. Det gør blå kirurgfisk til en både flot og vigtig del af livet på koralrevet."
+    "readMoreThree": "Piggene ved halen kan bruges til forsvar, hvis fisken føler sig truet. Det gør blå kirurgfisk til en både flot og vigtig del af livet på koralrevet."
   }
 ]

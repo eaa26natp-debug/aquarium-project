@@ -27,10 +27,39 @@ function openPopup(fiskId) {
 
   thisFish = fisk;
 
-  document.getElementById("popup-navn").textContent = fisk.name;
-  document.getElementById("popup-latin").textContent = fisk["latinsk-name"];
-  document.getElementById("popup-tekst").textContent = fisk["food-text"];
+  console.log(fisk.name);
 
+  /* Fisk info */
+  document.getElementById("popup-navn").textContent = fisk.name;
+  document.getElementById("popup-latin").textContent = fisk["latinskName"];
+  document.getElementById("popup-tekst").textContent = fisk["foodText"];
+
+  /* Fisk food */
+  const foodPopup = document.getElementById("food-popup");
+
+  foodPopup.querySelector("h2").innerHTML = fisk.name;
+  foodPopup.querySelectorAll("p")[0].innerHTML = fisk.latinskName;
+  foodPopup.querySelectorAll("p")[1].innerHTML = fisk.foodText;
+
+  const foodList = document.getElementsByClassName("foods")[0];
+  
+  /* Creates food elements */
+  fisk.food.forEach((el, index) => {
+    const foodContainer = document.createElement("div");
+
+    const foodHead = document.createElement("h6");
+    foodHead.innerHTML = Object.keys(el);
+
+    const foodImg = document.createElement("img");
+    foodImg.src = `../imges/icons/food-icons/${Object.values(fisk.food[index])[0]}`;
+
+    foodContainer.appendChild(foodHead);
+    foodContainer.appendChild(foodImg);
+
+    foodList.appendChild(foodContainer);
+  });
+
+  /* open info popup */
   popup.classList.remove("popup-hidden");
   popup.classList.add("popup-synlig");
 }
