@@ -17,4 +17,10 @@ function showSection(popup) {
     document.getElementById("fiske-popup").classList.toggle("popup-synlig");
     document.getElementById("food-popup").classList.toggle("popup-synlig");
   } 
+  if (popup == "readMore") {
+
+    document.getElementById("readmore-popup").classList.toggle("popup-synlig")
+    document.getElementById("fiske-popup").classList.toggle("popup-synlig")
+    
+  }
 }
