@@ -7,6 +7,8 @@ goBackList.forEach((goBackBtn) => {
   goBackBtn.addEventListener("click", () => {
     const popups = document.getElementsByClassName("popup-synlig");
     popups[0].classList.toggle("popup-synlig");
+
+    document.getElementById("fiske-popup").classList.add("popup-synlig"); 
   });
 });
 
