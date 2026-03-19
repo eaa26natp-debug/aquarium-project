@@ -3,7 +3,7 @@
 /* Fetches the fishes data from .json file */
 let fishList = [];
 function GetFishData() {
-  fetch("../fish-list.json")
+  fetch("fish-list.json")
     .then((response) => response.json())
     .then((data) => {
       fishList = data;
@@ -38,11 +38,6 @@ function openPopup(fiskId) {
 function closePopup() {
   popup.classList.remove("popup-synlig");
   popup.classList.add("popup-hidden");
-}
-
-function showSelection(name) {
-  document.querySelectorAll(".popup-sektion").forEach((s) => {});
-  document.getElementById("sektion-" + name).classList.add("aktiv");
 }
 
 // Alle fiske-id'er matcher JSON's "id"-felt
