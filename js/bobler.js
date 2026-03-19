@@ -10,7 +10,7 @@ console.log(bubble);
 /* Små bobler */
 function spawnBubble() {
   const bubble = document.createElement("img");
-  bubble.src = "imges/bubble/bubble.png";
+  bubble.src = "imges/bubble/bubble.svg";
   bubble.classList.add("bubble");
 
   let x = Math.random() * window.innerWidth;
