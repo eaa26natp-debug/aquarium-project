@@ -91,10 +91,7 @@
 
     "habitat-img": "globus-4.svg",
 
-    "food": [
-      { "Alger": "algae-icon.svg" },
-      { "Koreller": "coral-icon.svg" }
-    ],
+    "food": [{ "Alger": "algae-icon.svg" }, { "Koreller": "coral-icon.svg" }],
     "foodInfo": "Spiser mest alger og andet plantemateriale",
     "foodText": "Jeg spiser mest alger, som jeg nipper af sten og koraller med min lille mund. På den måde hjælper jeg også med at holde revet rent og sundt.",
 
@@ -108,7 +105,6 @@
     "readMoreThree": "Den lever alene eller i mindre grupper og kan være territorial over for andre fisk."
   },
   {
-    
     "id": "fisk-paletkirugfisk",
     "name": "Paletkirurgfisk",
     "latinskName": "(Acanthurus Coeruleus)",
@@ -119,10 +115,7 @@
 
     "habitat-img": "globus-5.svg",
 
-    "food": [
-      { "Alger": "algae-icon.svg" },
-      { "Koreller": "coral-icon.svg" }
-    ],
+    "food": [{ "Alger": "algae-icon.svg" }, { "Koreller": "coral-icon.svg" }],
     "foodInfo": "Spiser mest alger og andet plantemateriale",
     "foodText": "Jeg spiser mest alger, som jeg finder på sten, klipper og koraller. Nogle gange får jeg også lidt plankton med, når jeg svømmer rundt og leder efter mad.",
 
@@ -136,7 +129,6 @@
     "readMoreThree": "Piggene ved halen kan bruges til forsvar, hvis fisken føler sig truet. Det gør blå kirurgfisk til en både flot og vigtig del af livet på koralrevet."
   },
   {
-    
     "id": "fiske-gruppe",
     "name": "Kirugfisk",
     "latinskName": "(Acanthurus Coeruleus)",
@@ -146,11 +138,8 @@
     "habitatText": "Jeg bor ved koralrev, klipper og nogle gange ved havgræs i det varme hav. Du kan finde mig i Caribien, ved Bahamas, Florida og andre steder i det vestlige Atlanterhav. Her finder jeg masser af mad og gode steder at gemme mig mellem rev og sten.",
 
     "habitat-img": "globus-5.svg",
-    
-    "food": [
-      { "Alger": "algae-icon.svg" },
-      { "Koreller": "coral-icon.svg" }
-    ],
+
+    "food": [{ "Alger": "algae-icon.svg" }, { "Koreller": "coral-icon.svg" }],
     "foodInfo": "Spiser mest alger og andet plantemateriale",
     "foodText": "Jeg spiser mest alger, som jeg finder på sten, klipper og koraller. Nogle gange får jeg også lidt plankton med, når jeg svømmer rundt og leder efter mad.",
 

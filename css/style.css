@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&display=swap');
+
 * {
   margin: 0%;
   padding: 0%;
@@ -13,7 +15,7 @@ body {
   background-repeat: no-repeat;
   margin: 0;
   min-height: 100vh;
-  font-family: "Baloo Thambi 2";
+   font-family: "Baloo Thambi 2", system-ui;
 }
 
 h1 {
@@ -22,12 +24,10 @@ h1 {
 }
 
 h2 {
-  /*  font-size: 5rem; */
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 p {
-  /* font-size: 2rem; */
   font-size: 1rem;
 }
 
@@ -105,14 +105,10 @@ p {
   gap: 34px;
 }
 
-/* #readmore-popup {
-  position: relative;
-} */
-
 #readmore-left {
   position: absolute;
   top: 35%;
-  right: 60%;
+  left: -10%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -131,25 +127,28 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  
 }
 
 #readmore-left img,
 #readmore-right img {
   width: 300px;
-  
 }
 
+.back-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
 
-
-
-#sound-backbutton{
   position: absolute;
+<<<<<<< HEAD
   bottom: 0%;
   width: 100%;
   display: flex;
   justify-content: space-between;
+=======
+  bottom: 0;
+  left: 0;
+>>>>>>> 285c215082d093502eb12ba96a879a1d1846ed3f
   z-index: 100;
   opacity: 0;
   

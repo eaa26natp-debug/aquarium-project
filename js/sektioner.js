@@ -1,24 +1,27 @@
 "use strict";
 
-/* toggle popup visibility */
-const goBackList = Array.from(document.getElementsByClassName("go-back"));
+function goBack(from) {  
+  if (from == "habitat") {
+    document.getElementById("habitat-popup").classList.remove("popup-synlig");
+  }
+  if (from == "food") {
+    document.getElementById("food-popup").classList.remove("popup-synlig");
+  }
+  if (from == "readmore") {
+    document.getElementById("readmore-popup").classList.remove("popup-synlig");
+  }
 
-goBackList.forEach((goBackBtn) => {
-  goBackBtn.addEventListener("click", () => {
-    const popups = document.getElementsByClassName("popup-synlig");
-    popups[0].classList.toggle("popup-synlig");
-  });
-});
+  if (from == "info") {
+    document.getElementById("fiske-popup").classList.toggle("popup-synlig");
+  } else {
+    document.getElementById("fiske-popup").classList.remove("popup-hidden");
+    document.getElementById("fiske-popup").classList.add("popup-synlig");
+  }
+}
 
 /* Info redirect to food popup */
 
 function showSection(popup) {
-  document
-    .getElementById("sound-backbutton")
-    .classList.toggle("sound-backbutton");
-
-  console.log(document.getElementsByClassName("popup-synlig").length);
-
   if (popup == "food") {
     document.getElementById("fiske-popup").classList.toggle("popup-synlig");
     document.getElementById("food-popup").classList.toggle("popup-synlig");
@@ -30,9 +33,6 @@ function showSection(popup) {
   if (popup == "habitat") {
     openHabitatPopup();
   }
-  /*   document.getElementById("fiske-popup").classList.toggle("popup-synlig")
-    document.getElementById("habitat-popup").classList.toggle("popup-synlig")
-  } */
 }
 
 //Åben habitat popup til den korrekte fisk

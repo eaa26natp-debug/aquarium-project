@@ -1,7 +1,11 @@
 "use strict";
 
+/* Play backgound sound when clicked on screen */
 const audio = document.getElementById("bg-sound");
-audio.play();
+document.getElementsByTagName("html")[0].addEventListener("click", () => {  
+  audio.play()
+}, {once: true})
+
 
 const bubble = document.getElementById("bubble");
 const sound = new Audio("sound/bubble-pop.mp3");
