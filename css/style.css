@@ -47,7 +47,7 @@ p {
 }
 
 .popup-boble {
-  width: 100%; /* tilpasser boble */
+  width: 100%; /* tilpas boble */
 }
 
 .popup-indhold {
@@ -59,7 +59,7 @@ p {
   width: 65%;
 }
 
-/* Popup knapper til mere info */
+/* Popup knapper */
 .popup-knapper {
   display: flex;
   justify-content: center;
@@ -140,7 +140,16 @@ p {
   cursor: pointer;
 
   position: absolute;
+
+  bottom: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   bottom: 0;
   left: 0;
   z-index: 100;
+  opacity: 0;
+  
 }
+  
+   
