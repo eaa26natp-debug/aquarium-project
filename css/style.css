@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&display=swap');
+
 * {
   margin: 0%;
   padding: 0%;
@@ -13,7 +15,7 @@ body {
   background-repeat: no-repeat;
   margin: 0;
   min-height: 100vh;
-  font-family: "Baloo Thambi 2";
+   font-family: "Baloo Thambi 2", system-ui;
 }
 
 h1 {
@@ -22,7 +24,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.rem;
+  font-size: 1.5rem;
 }
 
 p {
@@ -135,7 +137,8 @@ p {
 .back-btn {
   background: none;
   border: none;
-  
+  cursor: pointer;
+
   position: absolute;
   bottom: 0;
   left: 0;
