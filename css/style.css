@@ -140,15 +140,13 @@ p {
   cursor: pointer;
 
   position: absolute;
-<<<<<<< HEAD
+
   bottom: 0%;
   width: 100%;
   display: flex;
   justify-content: space-between;
-=======
   bottom: 0;
   left: 0;
->>>>>>> 285c215082d093502eb12ba96a879a1d1846ed3f
   z-index: 100;
   opacity: 0;
   
